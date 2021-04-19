@@ -1,0 +1,16 @@
+{
+  "name": "aceita-cafe.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:aceita-cafe/aceita-cafe.github.io.git",
+  "author": "PinhoOn <pinhoonjob@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel index.pug --out-dir docs",
+    "build": "rm -rf docs && parcel build index.pug --out-dir docs --public-url ./"
+  },
+  "dependencies": {
+    "pug": "^3.0.2",
+    "sass": "^1.32.11"
+  }
+}

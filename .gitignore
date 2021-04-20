@@ -8,12 +8,8 @@
 dist/
 node_modules/
 yarn-debug.log*
-<<<<<<< HEAD
 yarn-error.log*
 lerna-debug.log*
-=======
-yarn-error.log
->>>>>>> d4dc38f6f0ef8e2c2cdefb144debddc0be7c91ff
 *.map
 
 # Diagnostic reports (https://nodejs.org/api/report.html)

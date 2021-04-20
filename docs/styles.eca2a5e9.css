@@ -58,12 +58,12 @@ header {
 
 /** DropDown */
 @media screen and (min-width: 701px) {
-  #headerDropdown {
+  #dropdownButton {
     visibility: hidden;
   }
 }
 @media screen and (max-width: 700px) {
-  #headerDropdown {
+  #dropdownButton {
     background-color: transparent;
     border: transparent;
     cursor: pointer;

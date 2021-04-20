@@ -9,6 +9,10 @@
     "dev": "parcel index.pug --out-dir docs",
     "build": "rm -rf docs && parcel build index.pug --out-dir docs --public-url ./"
   },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "pug": "^3.0.2"
+  },
   "dependencies": {
     "pug": "^3.0.2",
     "sass": "^1.32.11"

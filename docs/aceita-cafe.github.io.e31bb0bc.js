@@ -128,10 +128,14 @@ exports.headerDropdown = headerDropdown;
 function headerDropdown() {
   document.getElementById('headerNavDropdown').classList.toggle('show');
 }
+},{}],"index.js":[function(require,module,exports) {
+"use strict";
 
-document.addEventListener("DOMContentLoaded", function () {
-  if (target.matches('#headerDropdown')) ;
-  {
+var _header = require("./_src/js/_header");
+
+document.querySelector('#dropdownButton').addEventListener('click', _header.headerDropdown);
+window.addEventListener('click', function (event) {
+  if (!event.target.matches('#dropdownButton')) {
     var dropdown = document.getElementById('headerNavDropdown');
 
     if (dropdown.classList.contains('show')) {
@@ -139,13 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
-},{}],"index.js":[function(require,module,exports) {
-"use strict";
-
-var _header = require("./_src/js/_header");
-
-document.querySelector('#headerDropdown').addEventListener('click', _header.headerDropdown);
-},{"./_src/js/_header":"_src/js/_header.js"}],"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./_src/js/_header":"_src/js/_header.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -173,7 +171,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41981" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56003" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -349,5 +347,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/aceita-cafe.github.io.e31bb0bc.js.map

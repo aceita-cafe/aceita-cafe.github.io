@@ -30,7 +30,7 @@ header {
     margin-top: 15px;
     position: relative;
     padding: 0;
-    top: 15px;
+    top: 8px;
     width: 220px;
     z-index: 1;
   }
@@ -47,8 +47,7 @@ header {
 @media screen and (max-width: 700px) {
   .header__text {
     position: relative;
-    margin-bottom: 25px;
-    padding: 0;
+    padding: 5px 10px 20px;
   }
 }
 
@@ -64,18 +63,19 @@ header {
 }
 @media screen and (max-width: 700px) {
   #dropdownButton {
-    background-color: transparent;
     border: transparent;
+    background-color: transparent;
+    background-image: url(/dropdown.e5be86d6.svg);
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
     cursor: pointer;
-    left: 30px;
     position: absolute;
+    display: flex;
     top: 30px;
+    left: 60px;
+    z-index: 1;
   }
-}
-
-.header__dropdown--icon {
-  height: 14, 4px;
-  width: 16, 8px;
 }
 
 /** Social */

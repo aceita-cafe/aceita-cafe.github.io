@@ -1,30 +1,101 @@
+
 header{
-  width: 100%;
-  height: 76px;
+  @media screen and (min-width:701px) {
+    align-items: center;
+}
   display: flex;
-  align-items: center;
   flex-direction: row;
-  font-size: 14px;
+  height: 76px;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.header--text{
-  position: relative;
-  display: flex;
-  color: $grey-color;
-  text-decoration: none;
-  left: 180px;
-  margin-right: 25px;
-  font-weight:700;
+.header__nav{
+  @media screen and (min-width:701px) {
+    display: flex;
+    flex-direction: row;
+    left: 180px;
+    position: relative;
 }
-.header--text:first-of-type{
+  @media screen and (max-width:700px) {
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    height: 175px;
+    left: 65px;
+    margin-left: 15px;
+    margin-top: 15px;
+    position: relative;
+    padding: 0;
+    top: 15px;
+    width: 220px;
+    z-index: 1;
+}
+}
+
+.header__text{
+  color: $grey-color;
+  font-size: 14px;
+  font-weight:700;
+  margin-right: 25px;
+  text-decoration: none;
+  padding: 0;
+  @media screen and (max-width:700px) {
+    position: relative;
+    margin-bottom: 25px;
+    padding: 0;
+}
+}
+
+.header__text:first-of-type {
   color: $orange-color;
 }
 
-.header--icon{
-  position: relative;
-  display: flex;
-  margin-right: 20px;
-  left: 1000px;
-  width: 36px;
-  height: 36px;
+/** DropDown */
+
+
+#headerDropdown{
+  @media screen and (min-width:701px) {
+    visibility: hidden;
 }
+  @media screen and (max-width:700px) {
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer; 
+    left: 30px;
+    position: absolute;
+    top: 30px;
+}
+}
+
+.header__dropdown--icon {
+  height: 14,4px;
+  width: 16,8px;
+}
+
+/** Social */
+
+.header__social{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  @media screen and (min-width:701px) {
+    right: 185px
+}
+
+  @media screen and (max-width:700px) {
+    right: 30px ;
+    top: 20px;
+}
+}
+
+.header__social--icon {
+  height: 36px;
+  width: 36px;
+}
+
+.header__social--icon:not(:first-of-type) {
+  margin-left: 20px;
+}
+
+.show { display: flex; }

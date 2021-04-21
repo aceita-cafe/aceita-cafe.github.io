@@ -1,4 +1,4 @@
 export function headerDropdown() {
-  document.getElementById('headerNavDropdown').classList.toggle('show');
+  document.getElementById('headerNavDropdown').classList.toggle('is-visible');
 }
 

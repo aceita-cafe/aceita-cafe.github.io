@@ -133,6 +133,7 @@ body {
   background-image: url(/hero-background.03ea884f.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   height: 700px;
@@ -143,48 +144,110 @@ body {
 }
 .hero__logo {
   display: flex;
-  height: 167.6px;
-  position: relative;
-  top: 130px;
-  width: 383.83px;
+  position: absolute;
+}
+@media screen and (min-width: 701px) {
+  .hero__logo {
+    height: 167.6px;
+    width: 383.83px;
+    top: 157px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .hero__logo {
+    width: 205.71px;
+    height: 114.82px;
+    top: 53.3px;
+    margin: auto;
+    left: 13px;
+    right: 0;
+    width: 383.83px;
+  }
 }
 
 .resume {
   align-items: center;
   background-color: #FF8110;
-  border-radius: 25px;
   display: flex;
   flex-direction: column;
-  height: 396px;
-  left: 0;
-  padding: 10px 104px;
-  padding-bottom: 20px;
-  position: relative;
-  top: 200px;
-  width: 1075px;
+  position: absolute;
+}
+@media screen and (min-width: 701px) {
+  .resume {
+    border-radius: 25px;
+    height: 396px;
+    margin: auto;
+    padding-bottom: 20px;
+    padding: 10px 104px;
+    top: 396px;
+    width: 1075px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .resume {
+    border-radius: 10px;
+    height: 553px;
+    margin: auto;
+    padding: 30px 30px 40px 30px;
+    text-align: center;
+    top: 211px;
+    width: 290px;
+  }
 }
 .resume__title {
   color: white;
   font-family: "Poppins", sans-serif;
-  font-size: 42px;
+}
+@media screen and (min-width: 700px) {
+  .resume__title {
+    font-size: 42px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .resume__title {
+    font-size: 30px;
+  }
 }
 .resume__decoration {
   background-color: #5A1100;
   border-radius: 25px;
-  height: 6px;
-  margin-bottom: 30px;
   position: relative;
-  width: 50px;
-  top: -10px;
+}
+@media screen and (min-width: 700px) {
+  .resume__decoration {
+    height: 6px;
+    margin-bottom: 30px;
+    top: -10px;
+    width: 50px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .resume__decoration {
+    height: 6px;
+    width: 50px;
+    top: -10px;
+  }
 }
 .resume__text {
-  text-align: center;
+  display: flex;
+  position: relative;
+  color: white;
   font-size: 16px;
   line-height: 21.2px;
-  color: white;
+  text-align: center;
+}
+@media screen and (max-width: 700px) {
+  .resume__text {
+    top: 15px;
+  }
 }
 .resume__text:not(:last-of-type) {
   margin-bottom: 30px;
+}
+@media screen and (max-width: 700px) {
+  .resume__text:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
 }
 
 /*# sourceMappingURL=/styles.5c32a3d8.css.map */

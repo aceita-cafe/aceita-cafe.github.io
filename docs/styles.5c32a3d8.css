@@ -19,6 +19,7 @@ body {
   padding: 0 10%;
   position: absolute;
   width: 100%;
+  z-index: 1000;
 }
 @media screen and (min-width: 701px) {
   .header {
@@ -125,6 +126,65 @@ body {
 
 .is-visible {
   display: flex;
+}
+
+.hero {
+  align-items: center;
+  background-image: url(/hero-background.03ea884f.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  justify-content: center;
+  position: fixed;
+  top: 76px;
+  width: 100%;
+}
+.hero__logo {
+  display: flex;
+  height: 167.6px;
+  position: relative;
+  top: 130px;
+  width: 383.83px;
+}
+
+.resume {
+  align-items: center;
+  background-color: #FF8110;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  height: 396px;
+  left: 0;
+  padding: 10px 104px;
+  padding-bottom: 20px;
+  position: relative;
+  top: 200px;
+  width: 1075px;
+}
+.resume__title {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 42px;
+}
+.resume__decoration {
+  background-color: #5A1100;
+  border-radius: 25px;
+  height: 6px;
+  margin-bottom: 30px;
+  position: relative;
+  width: 50px;
+  top: -10px;
+}
+.resume__text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 21.2px;
+  color: white;
+}
+.resume__text:not(:last-of-type) {
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=/styles.5c32a3d8.css.map */

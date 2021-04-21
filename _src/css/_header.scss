@@ -6,6 +6,7 @@
   padding: 0 10%;
   position: absolute;
   width: 100%;
+  z-index: 1000;
   
   @media screen and (min-width:701px) {
     align-items: center;

@@ -1,0 +1,63 @@
+.hero {
+  align-items: center;
+  background-image: url(../assets/hero-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  justify-content: center;
+  position: fixed;
+  top: 76px;
+  width: 100%;
+  
+  &__logo {
+    display: flex;
+    height: 167.6px;
+    position: relative;
+    top: 130px;
+    width: 383.83px;
+  }
+}
+
+.resume {
+  align-items: center;
+  background-color: $orange-color;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  height: 396px;
+  left: 0;
+  padding: 10px 104px;
+  padding-bottom: 20px;
+  position: relative;
+  top: 200px;
+  width: 1075px;
+
+  &__title {
+    color: $light-color;
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+  }
+
+  &__decoration {
+    background-color: $dark-color;
+    border-radius: 25px;
+    height: 6px;
+    margin-bottom: 30px;
+    position: relative;
+    width: 50px;
+    top: -10px;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 21.2px;
+    color: $light-color;
+  }
+
+  &__text:not(:last-of-type){
+    margin-bottom: 30px;
+  }
+}

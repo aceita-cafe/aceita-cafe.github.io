@@ -130,7 +130,7 @@ body {
 
 .hero {
   align-items: center;
-  background-image: url(/hero-background.03ea884f.png);
+  background-image: url("/hero-background.03ea884f.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

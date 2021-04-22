@@ -36,16 +36,19 @@ body {
 }
 @media screen and (max-width: 700px) {
   .header__menu {
-    left: 0;
     background-color: white;
-    display: none;
+    display: flex;
     flex-direction: column;
     height: auto;
+    left: 0;
     margin-top: 15px;
-    position: absolute;
+    opacity: 0;
     padding: 0;
-    width: 100%;
+    position: absolute;
     top: 55%;
+    transition: 0.6s;
+    visibility: hidden;
+    width: 100%;
     z-index: 1;
   }
 }
@@ -59,8 +62,6 @@ body {
 }
 @media screen and (max-width: 700px) {
   .header__text {
-    flex-direction: column;
-    margin: auto;
     left: 0;
     line-height: 18.55px;
     margin-left: 18%;
@@ -95,6 +96,9 @@ body {
     width: 22px;
     z-index: 1;
   }
+}
+.header__button__button:hover {
+  opacity: 85%;
 }
 .header__nav {
   display: flex;
@@ -135,6 +139,8 @@ body {
 }
 
 .is-visible {
+  visibility: visible;
+  opacity: 1;
   display: flex;
 }
 

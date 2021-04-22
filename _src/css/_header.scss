@@ -47,10 +47,13 @@
     text-decoration: none;
     
     @media screen and (max-width:700px) {
+      display: flex;
+      margin:auto;
       left: 0;
       line-height: 18.55px;
       margin-left: 18%;
       padding: 15px 0;
+      transition: 0.5s;
     } 
   }
 
@@ -106,7 +109,8 @@
     display: flex;
     height: 36px;
     justify-content: center;
-    width: 36px;   
+    width: 36px; 
+    transition: 0.5s;  
   }
 
   &__social:hover {

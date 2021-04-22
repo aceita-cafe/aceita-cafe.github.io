@@ -1,0 +1,129 @@
+.hero {
+  align-items: center;
+  background-image: url("../assets/hero-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  justify-content: center;
+  position: relative;
+  top: 76px;
+  width: 100%;
+  
+  &__logo {
+    display: flex;
+    position: absolute;
+
+    @media screen and (min-width: 701px) {
+      height: 170x;
+      width: 385px;
+      top: 157px;
+      left: auto;
+      right: auto;
+    }
+
+    @media screen and (max-width: 700px) {
+      width: 205px;
+      height: 115px;
+      top: 53px;
+      margin: auto;
+      left: 13px;
+      right: 0;
+    }
+  }
+
+  &__resume {
+    align-items: center;
+    background-color: $orange-color;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    
+    @media screen and (min-width: 701px) {
+      border-radius: 25px;
+      min-height: 396px;
+      height: auto;
+      margin: auto;
+      padding: 10px 50px;
+      top: 396px;
+      width: 80%;
+    }
+
+    @media screen and (max-width: 700px) {
+      border-radius: 10px;
+      min-height: 553px;
+      height: auto;
+      margin: auto;
+      padding: 30px 30px 40px 30px;
+      text-align: center;
+      top: 211px;
+      width: 90%;
+    }
+  }
+
+  &__title {
+    color: $light-color;
+    font-family: 'Poppins', sans-serif;
+
+
+    @media screen and (min-width: 701px) {
+      font-size: 42px;
+    }
+
+    @media screen and (max-width: 700px) {
+      font-size: 30px;
+    }
+  }
+
+  &__decoration {
+    background-color: $dark-color;
+    border-radius: 25px;
+    position: relative;
+
+    @media screen and (min-width: 701px) {
+      height: 6px;
+      margin-bottom: 30px;
+      top: -10px;
+      width: 50px;
+    }
+
+    @media screen and (max-width: 700px) {
+      padding: 2px;
+      width: 50px;
+      top: -10px;
+    }
+  }
+
+  &__text {
+    display: flex;
+    position: relative;
+    color: $light-color;
+    font-size: 16px;
+    line-height: 21.2px;
+    text-align: center;
+
+    @media screen and (max-width: 700px) {
+      margin: auto;
+      padding: 0 50px 20px;
+    }
+
+    @media screen and (min-width: 701px) {
+      padding: 0 100px 20px;
+    }
+
+    @media screen and (min-width: 900px) {
+      padding: 0 20px;
+    }
+  }
+
+  &__text:not(:last-of-type) {
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 700px) {
+      margin-bottom: 20px;
+    }
+  }
+}

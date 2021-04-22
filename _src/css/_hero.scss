@@ -1,6 +1,6 @@
 .hero {
   align-items: center;
-  background-image: url('../assets/hero-background.png');
+  background-image: url("../assets/hero-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -15,55 +15,60 @@
   &__logo {
     display: flex;
     position: absolute;
-    @media screen and (min-width: 701px){
+
+    @media screen and (min-width: 701px) {
     height: 167.6px;
     width: 383.83px;
     top: 157px;
     }
-    @media screen and (max-width: 700px){
+
+    @media screen and (max-width: 700px) {
       width: 205.71px;
       height: 114.82px;
       top: 53.3px;
       margin: auto;
       left: 13px;
       right: 0;
-      width: 383.83px;
     }
   }
-}
-.resume {
-  align-items: center;
-  background-color: $orange-color;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  
-  @media screen and (min-width: 701px) {
-    border-radius: 25px;
-    height: 396px;
-    margin: auto;
-    padding-bottom: 20px;
-    padding: 10px 104px;
-    top: 396px;
-    width: 1075px;
-  }
-  @media screen and (max-width: 700px) {
-    border-radius: 10px;
-    height: 553px;
-    margin: auto;
-    padding: 30px 30px 40px 30px;
-    text-align: center;
-    top: 211px;
-    width: 290px;
+
+  &__resume {
+    align-items: center;
+    background-color: $orange-color;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    
+    @media screen and (min-width: 701px) {
+      border-radius: 25px;
+      height: 396px;
+      margin: auto;
+      padding-bottom: 20px;
+      padding: 10px 104px;
+      top: 396px;
+      width: 1075px;
+    }
+
+    @media screen and (max-width: 700px) {
+      border-radius: 10px;
+      height: 553px;
+      margin: auto;
+      padding: 30px 30px 40px 30px;
+      text-align: center;
+      top: 211px;
+      width: 290px;
+    }
   }
 
   &__title {
     color: $light-color;
     font-family: 'Poppins', sans-serif;
-    @media screen and (min-width: 700px){
+
+    @media screen and (min-width: 701px) {
       font-size: 42px;
     }
-    @media screen and (max-width: 700px){
+
+    @media screen and (max-width: 700px) {
       font-size: 30px;
     }
   }
@@ -72,14 +77,16 @@
     background-color: $dark-color;
     border-radius: 25px;
     position: relative;
-    @media screen and (min-width: 700px){
+
+    @media screen and (min-width: 701px) {
       height: 6px;
       margin-bottom: 30px;
       top: -10px;
       width: 50px;
     }
-    @media screen and (max-width: 700px){
-      height: 6px;
+
+    @media screen and (max-width: 700px) {
+      padding: 2px;
       width: 50px;
       top: -10px;
     }
@@ -92,13 +99,23 @@
     font-size: 16px;
     line-height: 21.2px;
     text-align: center;
+
     @media screen and (max-width: 700px) {
-      top: 15px;
+      top: 5px;
+    }
+
+    @media screen and (min-width: 701px) {
+      padding: 0 100px;
+    }
+
+    @media screen and (min-width: 900px) {
+      padding: 0;
     }
   }
 
   &__text:not(:last-of-type) {
     margin-bottom: 30px;
+
     @media screen and (max-width: 700px) {
       margin-bottom: 20px;
     }

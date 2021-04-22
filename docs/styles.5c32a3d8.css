@@ -161,11 +161,9 @@ body {
     margin: auto;
     left: 13px;
     right: 0;
-    width: 383.83px;
   }
 }
-
-.resume {
+.hero__resume {
   align-items: center;
   background-color: #FF8110;
   display: flex;
@@ -173,7 +171,7 @@ body {
   position: absolute;
 }
 @media screen and (min-width: 701px) {
-  .resume {
+  .hero__resume {
     border-radius: 25px;
     height: 396px;
     margin: auto;
@@ -184,7 +182,7 @@ body {
   }
 }
 @media screen and (max-width: 700px) {
-  .resume {
+  .hero__resume {
     border-radius: 10px;
     height: 553px;
     margin: auto;
@@ -194,27 +192,27 @@ body {
     width: 290px;
   }
 }
-.resume__title {
+.hero__title {
   color: white;
   font-family: "Poppins", sans-serif;
 }
-@media screen and (min-width: 700px) {
-  .resume__title {
+@media screen and (min-width: 701px) {
+  .hero__title {
     font-size: 42px;
   }
 }
 @media screen and (max-width: 700px) {
-  .resume__title {
+  .hero__title {
     font-size: 30px;
   }
 }
-.resume__decoration {
+.hero__decoration {
   background-color: #5A1100;
   border-radius: 25px;
   position: relative;
 }
-@media screen and (min-width: 700px) {
-  .resume__decoration {
+@media screen and (min-width: 701px) {
+  .hero__decoration {
     height: 6px;
     margin-bottom: 30px;
     top: -10px;
@@ -222,13 +220,13 @@ body {
   }
 }
 @media screen and (max-width: 700px) {
-  .resume__decoration {
-    height: 6px;
+  .hero__decoration {
+    padding: 2px;
     width: 50px;
     top: -10px;
   }
 }
-.resume__text {
+.hero__text {
   display: flex;
   position: relative;
   color: white;
@@ -237,15 +235,25 @@ body {
   text-align: center;
 }
 @media screen and (max-width: 700px) {
-  .resume__text {
-    top: 15px;
+  .hero__text {
+    top: 5px;
   }
 }
-.resume__text:not(:last-of-type) {
+@media screen and (min-width: 701px) {
+  .hero__text {
+    padding: 0 100px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .hero__text {
+    padding: 0;
+  }
+}
+.hero__text:not(:last-of-type) {
   margin-bottom: 30px;
 }
 @media screen and (max-width: 700px) {
-  .resume__text:not(:last-of-type) {
+  .hero__text:not(:last-of-type) {
     margin-bottom: 20px;
   }
 }

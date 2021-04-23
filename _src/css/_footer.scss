@@ -11,7 +11,7 @@
     color: $dark-color;
     display: flex;
     font-size: 34px;
-    top: 50px;
+    top: 45px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -44,8 +44,8 @@
       background-color: $light-color;
       display: flex;
       flex-direction: column;
-      padding-bottom: 50px;
-      padding: 0 ;
+      padding-bottom: 60px;
+      top: 30px;
       position: relative;
       margin-left: auto;
       margin-right: auto;
@@ -74,8 +74,12 @@
 
   &__icon {
     align-items: center;
+    color: $dark-color;
     display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
     text-align: right;
+    text-decoration: none;
     transition: 0.5s;
     
     @media screen and (min-width:851px) {

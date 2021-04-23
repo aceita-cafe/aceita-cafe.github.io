@@ -1,5 +1,4 @@
 .footer {
-  background-color: $light-color;
   display: flex;
   flex-direction: column;
   min-height: 370px;
@@ -12,6 +11,7 @@
     color: $dark-color;
     display: flex;
     font-size: 34px;
+    top: 50px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -20,6 +20,7 @@
 
   &__description  {
     color: $dark-color;
+    top: 15px;
     font-size: 14px;
     margin-left: auto;
     margin-right: auto;
@@ -28,28 +29,28 @@
   }
 
   &__social {
-    @media screen and (min-width: 701px) {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    width: 735px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    top: 50px;
-  }
+    @media screen and (min-width: 771px) {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      width: 735px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      top: 50px;
+    }
 
-  @media screen and (max-width: 700px) {
-    background-color: $light-color;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 50px;
-    padding: 0 ;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    @media screen and (max-width: 770px) {
+      background-color: $light-color;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 50px;
+      padding: 0 ;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
-}
 
   &__icon::before {
     align-items: center;
@@ -62,15 +63,20 @@
     padding: 10px;
     width: 24px;
   
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 770px) {
       margin-right: 20px;
     }
   }
 
+  &__icon:hover{
+    opacity: 0.75;
+  }
+
   &__icon {
-    text-align: right;
-    display: flex;
     align-items: center;
+    display: flex;
+    text-align: right;
+    transition: 0.5s;
     
     @media screen and (min-width:851px) {
       margin: 0 35px;
@@ -80,7 +86,7 @@
       margin: 0 15px;
     }
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 770px) {
       margin: 10px 0;
     }
   }

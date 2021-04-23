@@ -10,7 +10,7 @@
     width:  100%;
   }
 
-  @media screen and (max-width: 700px){
+  @media screen and (max-width: 700px) {
     background-color: $light-color;
     position: relative;
     display: flex;
@@ -24,54 +24,55 @@
     display: flex;
     font-size: 34px;
     color: $dark-color;
-    top: 50px;
     margin-left: auto;
     margin-right: auto;
   }
 
   &__description  {
-    text-align: center;
-    position: relative;
     color: $dark-color;
     font-size: 14px;
-    top: 30px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    text-align: center;
   }
 
   &__social {
-    @media screen and (min-width: 701px){
-    position: relative;
+    @media screen and (min-width: 701px) {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    left: -100px;
     margin-left: auto;
     margin-right: auto;
-    top: 100px;
-    left: -100px;
+    position: relative;
+    top: 50px;
   }
 
-  @media screen and (max-width: 700px){
+  @media screen and (max-width: 700px) {
     background-color: $light-color;
-    position: relative;
     display: flex;
     flex-direction: column;
-    top: 100px;
+    left: -100px;
     margin-left: auto;
     margin-right: auto;
-    left: -100px;
-    padding: 0 ;
     padding-bottom: 50px;
+    padding: 0 ;
+    position: relative;
+    top: 100px;
   }
 }
 
   &__icon {
+    align-items: center;
+    background-repeat: no-repeat;
     background-size: 48px;
+    display: flex;
+    height: 48px;
+    padding-left: 65px;
     position: relative;
     width: 48px;
-    height: 48px;
-    display: flex;
   }
 
   &__icon--whatsapp {
@@ -96,13 +97,5 @@
 
   &__icon--mail {
     background-image: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='48' height='48' rx='24' fill='%23FF8110'/%3E%3Cpath d='M35.9823 17.1678C35.9823 17.1404 36.0012 17.1137 35.9999 17.0866L28.6759 24.1461L35.9912 30.98C35.9955 30.9312 35.9823 30.882 35.9823 30.8321V17.1678Z' fill='white'/%3E%3Cpath d='M27.558 25.2324L24.5681 28.11C24.4168 28.2556 24.2214 28.3287 24.0259 28.3287C23.8344 28.3287 23.643 28.2588 23.4927 28.1187L20.511 25.3392L13.148 32.4388C13.327 32.5031 13.5192 32.5531 13.7205 32.5531H34.3314C34.6303 32.5531 34.9105 32.462 35.1542 32.3262L27.558 25.2324Z' fill='white'/%3E%3Cpath d='M24.0173 26.4691L35.1948 15.6983C34.9417 15.5477 34.6471 15.4468 34.3314 15.4468H13.7205C13.3093 15.4468 12.9326 15.6065 12.6392 15.85L24.0173 26.4691Z' fill='white'/%3E%3Cpath d='M12 17.4302V30.8319C12 30.9858 12.0353 31.1341 12.0737 31.2758L19.3454 24.271L12 17.4302Z' fill='white'/%3E%3C/svg%3E%0A");
-  }
-  
-  &__text {
-    position: relative;
-    font-size: 14px;
-    left: 65px;
-    padding-right: 30px;
-    color: $dark-color;
   }
 }

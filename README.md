@@ -13,4 +13,4 @@ This project is built with [ParcelJS](https://parceljs.org/)
 
 - Build:
     - 'yarn build' => compile the files into the 'docs' folder to get ready to deploy
-        
+

@@ -1,13 +1,13 @@
 {
   "name": "aceita-cafe.github.io",
   "version": "1.0.0",
-  "main": "_src/index.js",
-  "repository": "git@github.com:aceita-cafe/aceita-cafe.github.io.git",
+  "main": "src/index.js",
+  "repository": "git@github.com:aceitacafe/aceitacafe.github.io.git",
   "author": "PinhoOn <pinhoonjob@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel _src/index.pug --out-dir docs",
-    "build": "rm -rf docs && parcel build _src/index.pug --out-dir docs --public-url ./"
+    "dev": "parcel src/index.pug --out-dir docs",
+    "build": "rm -rf docs && parcel build src/index.pug --out-dir docs --public-url ./"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",

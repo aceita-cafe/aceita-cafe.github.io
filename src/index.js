@@ -1,4 +1,4 @@
-import { headerDropdown } from "/js/_header";
+import { headerDropdown } from "./js/header";
 
 document.querySelector('#dropdownButton').addEventListener('click', headerDropdown);
 

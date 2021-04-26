@@ -219,7 +219,7 @@ h1, h2 {
   text-align: center;
   z-index: 1;
 }
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 751px) {
   .hero__resume {
     border-radius: 25px;
     min-height: 400px;
@@ -228,7 +228,7 @@ h1, h2 {
     width: 80%;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   .hero__resume {
     border-radius: 10px;
     margin: 100px auto -200px;
@@ -315,10 +315,12 @@ h1, h2 {
 .products {
   align-items: center;
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
   max-width: 100%;
   min-height: 1300px;
   position: relative;
+  text-align: center;
 }
 .products__title {
   display: flex;
@@ -327,12 +329,13 @@ h1, h2 {
   position: relative;
 }
 .products__gallery {
-  columns: 400px 3;
+  columns: 350px 3;
   height: auto;
   position: relative;
 }
 .products__images {
   display: flex;
+  flex-wrap: wrap;
   height: 330px;
   margin: 0 auto;
   position: relative;
@@ -343,13 +346,15 @@ h1, h2 {
   align-items: center;
   background-color: #E5E5E5;
   border-radius: 25px;
+  justify-content: center;
   display: flex;
+  flex-wrap: wrap;
   height: 310px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
   top: -130px;
-  width: 370px;
+  width: 98%;
 }
 @media screen and (max-width: 380px) {
   .products__container {
@@ -367,7 +372,6 @@ h1, h2 {
 }
 .products .button {
   display: flex;
-  left: 60px;
   margin-top: 200px;
   position: relative;
 }
@@ -384,7 +388,7 @@ h1, h2 {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   height: 40px;
-  left: 40px;
+  margin-right: 20px;
   margin-top: 200px;
   padding: 10px 20px;
   position: relative;

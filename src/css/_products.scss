@@ -1,0 +1,94 @@
+.products {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  min-height: 1300px;
+
+  &__title {
+    position: relative;
+    display: flex;
+    font-size: 34px;
+    margin-bottom: 65px;
+  }
+
+  &__gallery { 
+    position: relative;
+    columns: 400px 3;
+    height: auto;
+  }
+
+  &__images {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    width: 300px;
+    height: 330px;
+    z-index: 1;
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    top: -130px;
+    width: 370px;
+    height: 310px;
+    background-color: $light-grey;
+    border-radius: 25px;
+  }
+
+  &__name {
+    text-align: center;
+    position: absolute;
+    top: 120px;
+    left: 40px;
+    width: 80%;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  
+  .button {
+    position: relative;
+    display: flex;
+    margin-top: 200px;
+    left: 60px;
+
+    &__details {
+      position: relative;
+      display: flex;
+      border-color: $orange-color;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      text-transform: uppercase;
+      text-decoration: none;
+      align-items: center;
+      flex-direction: row;
+      width: 140px;
+      height: 40px;
+      border: solid 2px;
+      border-radius: 25px;
+      padding: 10px 20px;
+      background-color: $light-color;
+      color: $orange-color;
+      transition: .5s;
+      margin-top: 200px ;
+      left: 40px;
+      cursor: pointer;
+    }
+  }
+  
+}
+
+.button__details:hover {
+  opacity: .75;
+}
+
+.button__details::before {
+  content: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.36938 0H8.70271C8.82123 0 8.88049 0.0592593 8.88049 0.177778V15.8222C8.88049 15.9407 8.82123 16 8.70271 16H7.36938C7.25086 16 7.1916 15.9407 7.1916 15.8222V0.177778C7.1916 0.0592593 7.25086 0 7.36938 0Z' fill='%23FF8110'/%3E%3Cpath d='M0.569379 7.15556H15.5027C15.6212 7.15556 15.6805 7.21481 15.6805 7.33333V8.66667C15.6805 8.78518 15.6212 8.84444 15.5027 8.84444H0.569379C0.450861 8.84444 0.391602 8.78518 0.391602 8.66667V7.33333C0.391602 7.21481 0.450861 7.15556 0.569379 7.15556Z' fill='%23FF8110'/%3E%3C/svg%3E%0A");
+  margin: 4px 10px 0 0;
+}

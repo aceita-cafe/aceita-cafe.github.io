@@ -40,7 +40,7 @@
     text-align: center;
     z-index: 1;
     
-    @media screen and (min-width: 701px) {
+    @media screen and (min-width: 751px) {
       border-radius: 25px;
       min-height: 400px;
       margin: 60px auto -350px;
@@ -48,7 +48,7 @@
       width: 80%;
     }
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 750px) {
       border-radius: 10px;
       margin: 100px auto -200px;
       padding-top: 50px;

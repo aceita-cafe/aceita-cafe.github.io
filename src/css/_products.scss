@@ -16,7 +16,7 @@
   }
   
   &__gallery { 
-    columns: 350px 3;
+    columns: 400px 3;
     height: auto;
     position: relative;
   }
@@ -43,7 +43,7 @@
     margin-right: auto;
     position: relative;
     top: -130px;
-    width: 98%;
+    width: 95%;
       
     @media screen and (max-width:380px) {
       width: 300px;

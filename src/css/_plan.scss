@@ -5,18 +5,19 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
+  width: auto;
   height: 750px;
   align-items: center;
-  justify-content: right;
+  justify-content: flex-end;
 
   &__container {
     background-color: $dazzled-color;
     flex-direction: column;
     display: flex;
-    position: relative;
     border-radius: 25px;
     padding: 30px 90px 80px 80px;
+    position: relative;
+  
     
     @media screen and (min-width: 741px ) {
       right: 5%;
@@ -28,7 +29,7 @@
       width: 90%;
       margin-left: auto;
       margin-right: auto;
-      align-items: left;
+      align-items: flex-start;
       padding: 30px 50px 50px 50px;
     }
     
@@ -40,10 +41,11 @@
   &__title {
     color: $dark-color;
     font-size: 42px;
+    position: relative;
 
     @media screen and (max-width: 380px) {
       font-size: 30px;
-      margin-left: -10px;
+      right: 10px;
     }
   }
 

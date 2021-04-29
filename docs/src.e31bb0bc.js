@@ -128,12 +128,84 @@ exports.headerDropdown = headerDropdown;
 function headerDropdown() {
   document.getElementById('headerNavDropdown').classList.toggle('is-visible');
 }
-},{}],"index.js":[function(require,module,exports) {
+},{}],"data/modal.json":[function(require,module,exports) {
+module.exports = {
+  "data": {
+    "1": {
+      "1": "Cordilheiras do Caparaó - Chocolate",
+      "2": "Catuaí Vermelho.",
+      "3": "Notas de chocolate e cacau.",
+      "4": "Secagem natural e em terreiro suspenso.",
+      "5": "83-84 pontos.",
+      "6": "Deneval Miranda Vieira e família.",
+      "7": "1.000 a 1.200 metros.",
+      "8": "Serra do Caparaó, ES"
+    },
+    "2": {
+      "1": "Cordilheiras do Caparaó - Café Junino",
+      "2": "Mokinha Catuaí Vermelho 785",
+      "3": "Corpo aveludado, doçura alta, acidez brilhante e notas de açúcar mascavo, mel, papa de milho verde e frutas vermelhas.",
+      "4": "Colheita tardia e descascado",
+      "5": "88-89 pontos.",
+      "6": "Deneval Miranda Vieira e família.",
+      "7": "1.000 a 1.200 metros.",
+      "8": "Serra do Caparaó, ES"
+    },
+    "3": {
+      "1": "Cordilheiras do Caparaó - Café da Rosa",
+      "2": "Catuaí Vermelho 785.",
+      "3": "Acidez incrivelmente brilhante e vibrante, corpo aveludado, marcante, com notas de especiarias, menta, alecrim, mel, chá de rosas e frutado.",
+      "4": "Secagem natural e em terreiro suspenso.",
+      "5": "88 pontos.",
+      "6": "Deneval Miranda Vieira e família.",
+      "7": "1.000 a 1.200 metros.",
+      "8": "Serra do Caparaó, ES"
+    },
+    "4": {
+      "1": "Douro Microlote Campeão do Coffee of The Year 2020",
+      "2": "Catucaí 2SL amarelo seleção (CAK)",
+      "3": "Alta doçura, que apresenta notas de rapadura e melaço, proporcionando uma acidez licorosa. ",
+      "4": "Lavado",
+      "5": "Campeão do Coffee of The Year 2020.",
+      "6": "Família Douro",
+      "7": "1.000 metros.",
+      "8": "Montanhas do Espirito Santo"
+    },
+    "5": {
+      "1": "Saint’ Clair - Mel Cítrico",
+      "2": "Catucai Amarelo 100% Arábica",
+      "3": "Mel cítrico com aroma intenso e acidez média",
+      "4": "Torra média ",
+      "5": "-",
+      "6": "Denilson Antônio Costa.",
+      "7": "1.150 metros.",
+      "8": "Ilicínea, MG"
+    },
+    "6": {
+      "1": "Saint’ Clair - Tradicional",
+      "2": "100% Arábica Mundo Novo",
+      "3": "Encorpado, robusto com perfume intenso.",
+      "4": "Torra média ",
+      "5": "-",
+      "6": "Claudio Antônio da Cunha.",
+      "7": "1.000 metros.",
+      "8": "Sul de Minas"
+    }
+  }
+};
+},{}],"js/modal.js":[function(require,module,exports) {
+"use strict";
+
+var _modal = require("../data/modal.json");
+},{"../data/modal.json":"data/modal.json"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _header = require("./js/header");
 
+var _modal = require("./js/modal");
+
 document.querySelector('#dropdownButton').addEventListener('click', _header.headerDropdown);
+document.querySelector("[data-modal]").addEventListener('click', _modal.writeIn);
 window.addEventListener('click', function (event) {
   if (!event.target.matches('#dropdownButton')) {
     var dropdown = document.getElementById('headerNavDropdown');
@@ -143,7 +215,7 @@ window.addEventListener('click', function (event) {
     }
   }
 });
-},{"./js/header":"js/header.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./js/header":"js/header.js","./js/modal":"js/modal.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -171,7 +243,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36735" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44505" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

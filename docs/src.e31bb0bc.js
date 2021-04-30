@@ -132,64 +132,64 @@ function headerDropdown() {
 module.exports = {
   "data": {
     "1": {
-      "1": "Cordilheiras do Caparaó - Chocolate",
-      "2": "Catuaí Vermelho.",
-      "3": "Notas de chocolate e cacau.",
-      "4": "Secagem natural e em terreiro suspenso.",
-      "5": "83-84 pontos.",
-      "6": "Deneval Miranda Vieira e família.",
-      "7": "1.000 a 1.200 metros.",
-      "8": "Serra do Caparaó, ES"
+      "name": " Cordilheiras do Caparaó - Chocolate",
+      "variation": "Catuaí Vermelho.",
+      "sensory": "Notas de chocolate e cacau.",
+      "process": "Secagem natural e em terreiro suspenso.",
+      "highlights": "83-84 pontos.",
+      "madeby": "Deneval Miranda Vieira e família.",
+      "altitude": "1.000 a 1.200 metros.",
+      "region": "Serra do Caparaó, ES"
     },
     "2": {
-      "1": "Cordilheiras do Caparaó - Café Junino",
-      "2": "Mokinha Catuaí Vermelho 785",
-      "3": "Corpo aveludado, doçura alta, acidez brilhante e notas de açúcar mascavo, mel, papa de milho verde e frutas vermelhas.",
-      "4": "Colheita tardia e descascado",
-      "5": "88-89 pontos.",
-      "6": "Deneval Miranda Vieira e família.",
-      "7": "1.000 a 1.200 metros.",
-      "8": "Serra do Caparaó, ES"
+      "name": "Cordilheiras do Caparaó - Café Junino",
+      "variation": "Mokinha Catuaí Vermelho 785",
+      "sensory": "Corpo aveludado, doçura alta, acidez brilhante e notas de açúcar mascavo, mel, papa de milho verde e frutas vermelhas.",
+      "process": "Colheita tardia e descascado",
+      "highlights": "88-89 pontos.",
+      "madeby": "Deneval Miranda Vieira e família.",
+      "altitude": "1.000 a 1.200 metros.",
+      "region": "Serra do Caparaó, ES"
     },
     "3": {
-      "1": "Cordilheiras do Caparaó - Café da Rosa",
-      "2": "Catuaí Vermelho 785.",
-      "3": "Acidez incrivelmente brilhante e vibrante, corpo aveludado, marcante, com notas de especiarias, menta, alecrim, mel, chá de rosas e frutado.",
-      "4": "Secagem natural e em terreiro suspenso.",
-      "5": "88 pontos.",
-      "6": "Deneval Miranda Vieira e família.",
-      "7": "1.000 a 1.200 metros.",
-      "8": "Serra do Caparaó, ES"
+      "name": "Cordilheiras do Caparaó - Café da Rosa",
+      "variation": "Catuaí Vermelho 785.",
+      "sensory": "Acidez incrivelmente brilhante e vibrante, corpo aveludado, marcante, com notas de especiarias, menta, alecrim, mel, chá de rosas e frutado.",
+      "process": "Secagem natural e em terreiro suspenso.",
+      "highlights": "88 pontos.",
+      "madeby": "Deneval Miranda Vieira e família.",
+      "altitude": "1.000 a 1.200 metros.",
+      "region": "Serra do Caparaó, ES"
     },
     "4": {
-      "1": "Douro Microlote Campeão do Coffee of The Year 2020",
-      "2": "Catucaí 2SL amarelo seleção (CAK)",
-      "3": "Alta doçura, que apresenta notas de rapadura e melaço, proporcionando uma acidez licorosa. ",
-      "4": "Lavado",
-      "5": "Campeão do Coffee of The Year 2020.",
-      "6": "Família Douro",
-      "7": "1.000 metros.",
-      "8": "Montanhas do Espirito Santo"
+      "name": "Douro Microlote Campeão do Coffee of The Year 2020",
+      "variation": "Catucaí 2SL amarelo seleção (CAK)",
+      "sensory": "Alta doçura, que apresenta notas de rapadura e melaço, proporcionando uma acidez licorosa. ",
+      "process": "Lavado",
+      "highlights": "Campeão do Coffee of The Year 2020.",
+      "madeby": "Família Douro",
+      "altitude": "1.000 metros.",
+      "region": "Montanhas do Espirito Santo"
     },
     "5": {
-      "1": "Saint’ Clair - Mel Cítrico",
-      "2": "Catucai Amarelo 100% Arábica",
-      "3": "Mel cítrico com aroma intenso e acidez média",
-      "4": "Torra média ",
-      "5": "-",
-      "6": "Denilson Antônio Costa.",
-      "7": "1.150 metros.",
-      "8": "Ilicínea, MG"
+      "name": "Saint’ Clair - Mel Cítrico",
+      "variation": "Catucai Amarelo 100% Arábica",
+      "sensory": "Mel cítrico com aroma intenso e acidez média",
+      "process": "Torra média ",
+      "highlights": "-",
+      "madeby": "Denilson Antônio Costa.",
+      "altitude": "1.150 metros.",
+      "region": "Ilicínea, MG"
     },
     "6": {
-      "1": "Saint’ Clair - Tradicional",
-      "2": "100% Arábica Mundo Novo",
-      "3": "Encorpado, robusto com perfume intenso.",
-      "4": "Torra média ",
-      "5": "-",
-      "6": "Claudio Antônio da Cunha.",
-      "7": "1.000 metros.",
-      "8": "Sul de Minas"
+      "name": "Saint’ Clair - Tradicional",
+      "variation": "100% Arábica Mundo Novo",
+      "sensory": "Encorpado, robusto com perfume intenso.",
+      "process": "Torra média ",
+      "highlights": "-",
+      "madeby": "Claudio Antônio da Cunha.",
+      "altitude": "1.000 metros.",
+      "region": "Sul de Minas"
     }
   }
 };
@@ -198,10 +198,24 @@ module.exports = {
 
 var _modal = require("../data/modal.json");
 
-var variationElement = document.querySelector("[data-variation]");
+var coffeeName = document.querySelector("[data-name]");
+var coffeeVariation = document.querySelector("[data-variation]");
+var coffeeSensory = document.querySelector("[data-sensory");
+var coffeeProcess = document.querySelector("[data-process");
+var coffeeHighLights = document.querySelector("[data-highlights");
+var coffeeMadeBy = document.querySelector("[data-madeby");
+var coffeeAltitude = document.querySelector("[data-altitude");
+var coffeeRegion = document.querySelector("[data-region");
 
 var openModal = function openModal(id) {
-  variationElement.innerHTML = _modal.data[id][1];
+  coffeeName.innerHTML = _modal.data[id].name;
+  coffeeVariation.innerHTML = _modal.data[id].variation;
+  coffeeSensory.innerHTML = _modal.data[id].sensory;
+  coffeeProcess.innerHTML = _modal.data[id].process;
+  coffeeHighLights.innerHTML = _modal.data[id].highlights;
+  coffeeMadeBy.innerHTML = _modal.data[id].madeby;
+  coffeeAltitude.innerHTML = _modal.data[id].altitude;
+  coffeeRegion.innerHTML = _modal.data[id].region;
 };
 
 window.openModal = openModal;
@@ -212,6 +226,7 @@ var _header = require("./js/header");
 
 var _modal = require("./js/modal");
 
+document.getElementById('modal').classList.toggle('flex-active');
 document.querySelector('#dropdownButton').addEventListener('click', _header.headerDropdown);
 document.querySelector("[data-modal]").addEventListener('click', _modal.writeIn);
 window.addEventListener('click', function (event) {
@@ -222,7 +237,14 @@ window.addEventListener('click', function (event) {
       dropdown.classList.remove('is-visible');
     }
   }
-});
+}); // window.addEventListener('click', function(event) {
+//   if (!event.target.matches("[data-modal]")) {
+//     var dropdown = document.getElementById('modal');
+//     if (dropdown.classList.contains('flex-active')) {
+//       dropdown.classList.remove('flex-active');
+//     }
+//   }
+// })
 },{"./js/header":"js/header.js","./js/modal":"js/modal.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -251,7 +273,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54340" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45215" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

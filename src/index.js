@@ -1,6 +1,7 @@
 import { headerDropdown } from "./js/header";
 import { writeIn } from "./js/modal";
 
+document.getElementById('modal').classList.toggle('flex-active');
 document.querySelector('#dropdownButton').addEventListener('click', headerDropdown);
 document.querySelector("[data-modal]").addEventListener('click', writeIn);
 
@@ -12,3 +13,12 @@ window.addEventListener('click', function(event) {
     }
   }
 })
+
+// window.addEventListener('click', function(event) {
+//   if (!event.target.matches("[data-modal]")) {
+//     var dropdown = document.getElementById('modal');
+//     if (dropdown.classList.contains('flex-active')) {
+//       dropdown.classList.remove('flex-active');
+//     }
+//   }
+// })

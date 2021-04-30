@@ -1,16 +1,27 @@
 #modal.modal
-  h1.modal__title(data-content="1")
-  p.modal__subtitles Variaçao: <span data-variation></span>
-  span.modal__content(data-content="2")
-  p.modal__subtitles Sensoriais:
-  span.modal__content(data-content="3")
-  p.modal__subtitles Processo:
-  span.modal__content(data-content="4")
-  p.modal__subtitle Destaques:
-  span.modal__content(data-content="5")
-  p.modal__subtitle Produzido por:
-  span.modal__content(data-content="6")
-  p.modal__subtitle Altitude:
-  span.modal__content(data-content="7")
-  p.modal__subtitle Região:
-  span.modal__content(data-content="8")
+  h1.modal__title(data-name)
+  .modal__left
+    .modal__icon.modal__icon--variation
+      p Variação: 
+        span.modal__content(data-variation)
+    .modal__icon.modal__icon--sensory  
+      p Sensoriais:
+        span.modal__content(data-sensory)
+    .modal__icon.modal__icon--process
+      p Processo: 
+        span.modal__content(data-process)
+    .modal__icon.modal__icon--highlights
+      p Destaques:
+        span.modal__content(data-highlights)
+    .modal__icon.modal__icon--madeby
+      p Produzido por:
+        span.modal__content(data-madeby)
+    .modal__icon.modal__icon--altitude
+      p Altitude:
+        span.modal__content(data-altitude)
+    .modal__icon.modal__icon--region
+      p Região:
+        span.modal__content(data-region)
+  .modal__right
+    a.button.button__whatsapp(href="http://wa.me/556699511499" target='_blank') Comprar
+    a.button.button__back Voltar

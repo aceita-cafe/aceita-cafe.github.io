@@ -197,6 +197,14 @@ module.exports = {
 "use strict";
 
 var _modal = require("../data/modal.json");
+
+var variationElement = document.querySelector("[data-variation]");
+
+var openModal = function openModal(id) {
+  variationElement.innerHTML = _modal.data[id][1];
+};
+
+window.openModal = openModal;
 },{"../data/modal.json":"data/modal.json"}],"index.js":[function(require,module,exports) {
 "use strict";
 
@@ -243,7 +251,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44505" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54340" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

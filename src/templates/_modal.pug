@@ -1,3 +1,4 @@
+#closeArea.close(onclick="closeModal(2)")
 #modal.modal
   h1.modal__title(data-name)
   .modal__left
@@ -24,4 +25,4 @@
         span.modal__content(data-region)
   .modal__right
     a.button.button__whatsapp(href="http://wa.me/556699511499" target='_blank') Comprar
-    a.button.button__back Voltar
+    a.button.button__back(onclick="closeModal(1)") Voltar

@@ -1,7 +1,6 @@
 .hero {
   align-items: center;
   background-image: url("../assets/hero-background.png");
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -13,6 +12,10 @@
   position: relative;
   top: 76px;
   width: 100%;
+
+  @media screen and (min-width: 800px) {
+    background-attachment: fixed;
+  }
   
   &__logo {
     display: flex;

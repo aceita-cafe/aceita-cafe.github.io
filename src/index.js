@@ -1,5 +1,5 @@
 import { headerDropdown } from "./js/header";
-import { writeIn } from "./js/modal";
+import { close } from "./js/modal";
 
 document.querySelector('#dropdownButton').addEventListener('click', headerDropdown);
 
@@ -11,3 +11,11 @@ window.addEventListener('click', function(event) {
     }
   }
 })
+
+
+
+
+
+
+
+

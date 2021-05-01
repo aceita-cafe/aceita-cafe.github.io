@@ -2,6 +2,10 @@
   visibility: visible;
   opacity: 1;
 }
+.flex-desative {
+  display: none ;
+}
+
 .flex-active {
-  display: flex;
+  display:flex;
 }

@@ -9,8 +9,9 @@ const coffeeMadeBy = document.querySelector("[data-madeby");
 const coffeeAltitude = document.querySelector("[data-altitude");
 const coffeeRegion = document.querySelector("[data-region");
 
-
 const openModal = (id) => {
+  document.getElementById('modal').classList.toggle('is-visible');
+  document.getElementById('closeArea').classList.toggle('is-visible');
   coffeeName.innerHTML = data[id].name;
   coffeeVariation.innerHTML = data[id].variation;
   coffeeSensory.innerHTML = data[id].sensory;
@@ -21,23 +22,16 @@ const openModal = (id) => {
   coffeeRegion.innerHTML = data[id].region;
 };
 
-document.getElementById('modal').classList.toggle('flex-desative');
-
-window.addEventListener('click', function(act) {
-  if (!act.target.matches("[data-modal]")) {
-    var flex = document.getElementById('modal');
+const closeModal = (id) => {
+    var modal = document.getElementById('modal');
+    var close = document.getElementById('closeArea');
     
-    if (flex.classList.contains('flex-desative')) {
-      flex.classList.remove('flex-desative');
-      flex.classList.toggle('flex-active')
-    }
-
-    if (flex.classList.contains('flex-desative')) {
-      flex.classList.remove('flex-desative');
-      flex.classList.toggle('flex-active')
-    }
+    if (modal.classList.contains('is-visible')) {
+      close.classList.remove('is-visible')
+      modal.classList.remove('is-visible');
   }
-})
+}
 
+window.closeModal = closeModal;
 window.openModal = openModal;
 

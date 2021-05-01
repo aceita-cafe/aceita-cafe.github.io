@@ -1,18 +1,31 @@
 .modal {
+  position: fixed;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
   padding: 10px 30px;
   color: $dark-color;
   flex-direction: column;
   border-radius: 25px 25px 0 0 ;
   background-color: $light-color;
-  z-index: 1000;
+  z-index: 3000;
+  width: 100%;
+  height: max-content;
+  bottom: 0;
+
   
   @media screen and (min-width: 901px) {
     height: 660px;
   }
 
   @media screen and (max-width: 770px) {
-    height: max-content;
-    z-index: 1000;
+    height: 100%;
+    overflow-y: scroll;
+  }
+
+  @media screen and (max-width: 300px) {
+    padding-left: 10px;
+    overflow-y: scroll;
   }
 
   &__left {
@@ -54,6 +67,10 @@
     @media screen and (min-width: 1410px) {
       width: 500px;
     }
+
+    @media screen and (max-width: 360px) {
+      width: 200px;
+    }
   }
   
   &__content:first-of-type {
@@ -91,6 +108,10 @@
       width: 90%;
       height: 100px;
     }
+
+    @media screen and (max-width: 300px) {
+      width: 100%;
+    }
   }
 
   .button__back {
@@ -100,7 +121,7 @@
     @media screen and (max-width: 770px) {
       width: 35px;
       padding: 15px 20px 15px 20px ;
-      margin-right: 30px;
+      margin-right: 10px;
       overflow: hidden;
       border-color: $orange-color;
       border: solid;
@@ -157,6 +178,17 @@
   &__icon--region::before {
     content: url("data:image/svg+xml,%3Csvg width='24' height='21' viewBox='0 0 16 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.99997 12.5001C10.206 12.5001 12 10.7061 12 8.50008C12 6.29408 10.206 4.50008 7.99997 4.50008C5.79397 4.50008 3.99997 6.29408 3.99997 8.50008C3.99997 10.7061 5.79397 12.5001 7.99997 12.5001ZM7.99997 6.50008C9.10297 6.50008 9.99997 7.39708 9.99997 8.50008C9.99997 9.60308 9.10297 10.5001 7.99997 10.5001C6.89697 10.5001 5.99997 9.60308 5.99997 8.50008C5.99997 7.39708 6.89697 6.50008 7.99997 6.50008Z' fill='white'/%3E%3Cpath d='M7.41997 20.3141C7.58921 20.4349 7.79199 20.4999 7.99997 20.4999C8.20794 20.4999 8.41072 20.4349 8.57997 20.3141C8.88397 20.0991 16.029 14.9401 16 8.50008C16 4.08908 12.411 0.50008 7.99997 0.50008C3.58897 0.50008 -3.40326e-05 4.08908 -3.40326e-05 8.49508C-0.029034 14.9401 7.11597 20.0991 7.41997 20.3141ZM7.99997 2.50008C11.309 2.50008 14 5.19108 14 8.50508C14.021 12.9431 9.61197 16.9281 7.99997 18.2351C6.38897 16.9271 1.97897 12.9411 1.99997 8.50008C1.99997 5.19108 4.69097 2.50008 7.99997 2.50008Z' fill='white'/%3E%3C/svg%3E%0A");
   }
+}
+
+.close {
+  width: 100%;
+  height: 500px;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  position: fixed;
+  z-index: 2999;
+  top: 0;
 }
 
 .button__back::before {

@@ -21,5 +21,23 @@ const openModal = (id) => {
   coffeeRegion.innerHTML = data[id].region;
 };
 
+document.getElementById('modal').classList.toggle('flex-desative');
+
+window.addEventListener('click', function(act) {
+  if (!act.target.matches("[data-modal]")) {
+    var flex = document.getElementById('modal');
+    
+    if (flex.classList.contains('flex-desative')) {
+      flex.classList.remove('flex-desative');
+      flex.classList.toggle('flex-active')
+    }
+
+    if (flex.classList.contains('flex-desative')) {
+      flex.classList.remove('flex-desative');
+      flex.classList.toggle('flex-active')
+    }
+  }
+})
+
 window.openModal = openModal;
 

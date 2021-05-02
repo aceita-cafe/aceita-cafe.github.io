@@ -48,81 +48,15 @@
     @media screen and (max-width:380px) {
       width: 300px;
     }
-
   }
 
   &__name {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
-    left: 40px;
-    position: absolute;
-    text-align: center;
-    top: 120px;
-    width: 80%;
-  }
-  
-  .button {
-    display: flex;
-    margin-top: 200px;
     position: relative;
-
-    @media screen and (max-width: 380px) {
-      
-    }
-
-    &__details {
-      align-items: center;
-      background-color: $light-color;
-      border-color: $orange-color;
-      border-radius: 25px;
-      border: solid 2px;
-      color: $orange-color;
-      cursor: pointer;
-      display: flex;
-      flex-direction: row;
-      font-family: 'Poppins', sans-serif;
-      font-size: 14px;
-      height: 40px;
-      margin-right: 20px;
-      margin-top: 200px ;
-      padding: 10px 20px;
-      position: relative;
-      text-decoration: none;
-      text-transform: uppercase;
-      transition: .5s;
-      width: 140px;
-      @media screen and (max-width: 380px) {
-        width: 10px;
-        height: 40px;
-        padding: 10px 18px;
-        overflow: hidden;
-      }
-    }
-  }
-  
-  .button__details:hover {
-    @media screen and (min-width: 381px) {
-      color: $light-color;
-      background-color: $orange-color;
-      opacity: .75;
-      padding: 10px 10px;
-      border-color: $orange-color;
-    }
-    @media screen and (max-width: 380px) {
-      opacity: .75;
-    }
-  }
-  
-  .button__details::before {
-    @media screen and (max-width: 380px) {
-      content: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.36938 0H8.70271C8.82123 0 8.88049 0.0592593 8.88049 0.177778V15.8222C8.88049 15.9407 8.82123 16 8.70271 16H7.36938C7.25086 16 7.1916 15.9407 7.1916 15.8222V0.177778C7.1916 0.0592593 7.25086 0 7.36938 0Z' fill='%23FF8110'/%3E%3Cpath d='M0.569379 7.15556H15.5027C15.6212 7.15556 15.6805 7.21481 15.6805 7.33333V8.66667C15.6805 8.78518 15.6212 8.84444 15.5027 8.84444H0.569379C0.450861 8.84444 0.391602 8.78518 0.391602 8.66667V7.33333C0.391602 7.21481 0.450861 7.15556 0.569379 7.15556Z' fill='%23FF8110'/%3E%3C/svg%3E%0A");
-      margin: 5px 100px 0 -8px;
-    }
-  
-    @media screen and (min-width: 381px) {
-      content: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.36938 0H8.70271C8.82123 0 8.88049 0.0592593 8.88049 0.177778V15.8222C8.88049 15.9407 8.82123 16 8.70271 16H7.36938C7.25086 16 7.1916 15.9407 7.1916 15.8222V0.177778C7.1916 0.0592593 7.25086 0 7.36938 0Z' fill='%23FF8110'/%3E%3Cpath d='M0.569379 7.15556H15.5027C15.6212 7.15556 15.6805 7.21481 15.6805 7.33333V8.66667C15.6805 8.78518 15.6212 8.84444 15.5027 8.84444H0.569379C0.450861 8.84444 0.391602 8.78518 0.391602 8.66667V7.33333C0.391602 7.21481 0.450861 7.15556 0.569379 7.15556Z' fill='%23FF8110'/%3E%3C/svg%3E%0A");
-      margin: 4px 10px 0 0;
-    }
+    text-align: center;
+    top: 80px;
+    width: 85%;
   }
 }
 

@@ -1,13 +1,13 @@
 .plan {
-  display: flex;
-  position: relative;
+  align-items: center;
   background-image: url("../assets/plan-background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  width: auto;
+  display: flex;
   height: 750px;
-  align-items: center;
   justify-content: flex-end;
+  position: relative;
+  width: auto;
 
   @media screen and (min-width: 800px) {
     background-attachment: fixed;
@@ -15,25 +15,25 @@
 
   &__container {
     background-color: $dazzled-color;
-    flex-direction: column;
-    display: flex;
     border-radius: 25px;
+    display: flex;
+    flex-direction: column;
     padding: 30px 90px 80px 80px;
     position: relative;
   
     
     @media screen and (min-width: 741px ) {
+      height: 435px;
       right: 5%;
       width: 675px;
-      height: 435px;
     }
   
     @media screen and (max-width: 740px) {
-      width: 90%;
+      align-items: flex-start;
       margin-left: auto;
       margin-right: auto;
-      align-items: flex-start;
-      padding: 30px 50px 50px 50px;
+      padding: 30px 50px 50px;
+      width: 90%;
     }
     
     @media screen and (max-width: 380px) {
@@ -55,10 +55,6 @@
   &__text {
     color: $dark-color;
     font-size: 14px;
-    margin-top: -10px;
+    margin: -10px 0 30px;
   }
 }
-
-  .button {
-    margin-top: 30px;
-  }

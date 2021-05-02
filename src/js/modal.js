@@ -23,12 +23,12 @@ const openModal = (id) => {
 };
 
 const closeModal = (id) => {
-    var modal = document.getElementById('modal');
-    var close = document.getElementById('closeArea');
-    
-    if (modal.classList.contains('is-visible')) {
-      close.classList.remove('is-visible')
-      modal.classList.remove('is-visible');
+  var modal = document.getElementById('modal');
+  var close = document.getElementById('closeArea');
+  
+  if (modal.classList.contains('is-visible')) {
+    close.classList.remove('is-visible')
+    modal.classList.remove('is-visible');
   }
 }
 

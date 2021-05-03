@@ -46,9 +46,8 @@
     font-size: 42px;
     position: relative;
 
-    @media screen and (max-width: 380px) {
+    @media screen and (max-width: 500px) {
       font-size: 30px;
-      right: 10px;
     }
   }
 

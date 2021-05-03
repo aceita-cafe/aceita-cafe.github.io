@@ -11,6 +11,10 @@
   @media screen and (min-width:701px) {
     align-items: center;
   }
+
+  @media screen and (max-width:700px) {
+    padding: 0 15px;
+  }
   
   &__menu {
 
@@ -80,7 +84,7 @@
       cursor: pointer; 
       display: flex;
       height: 25px;
-      left: 10%;
+      left: 15px;
       padding: 10px;
       position: relative;
       top: 30px;

@@ -1,11 +1,9 @@
-doctype html 
-html(lang='pt_BR')
-  include ./templates/_head.pug
-  body
-    include ./templates/_header.pug
-    include ./templates/_hero.pug
-    include ./templates/_products.pug
-    include ./templates/_modal.pug
-    include ./templates/_plan.pug
-    include ./templates/_footer.pug
-  script(src='./index.js' defer)
+#home
+include ./_layout.pug
+include ./templates/_header.pug
+include ./templates/_hero.pug
+include ./templates/_products.pug
+include ./templates/_modal.pug
+include ./templates/_plan.pug
+include ./templates/_footer.pug
+script(src='./index.js' defer)

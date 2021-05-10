@@ -1,1 +1,1 @@
-ErrorDocument 404 /404.pug
+ErrorDocument 404 ./404.pug

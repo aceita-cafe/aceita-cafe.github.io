@@ -1,12 +1,12 @@
 .footer {
   display: flex;
   flex-direction: column;
-  min-height: 370px;
+  min-height: 340px;
   padding: 0 30px;
   position: relative;
 
   &__title  {
-    color: $dark-color;
+    color: $brown;
     display: flex;
     font-size: 34px;
     top: 45px;
@@ -17,7 +17,7 @@
   }
 
   &__description  {
-    color: $dark-color;
+    color: $brown;
     top: 15px;
     font-size: 14px;
     margin-left: auto;
@@ -40,7 +40,7 @@
     }
 
     @media screen and (max-width: 770px) {
-      background-color: $light-color;
+      background-color: $white;
       flex-direction: column;
       padding-bottom: 60px;
       top: 30px;
@@ -49,7 +49,7 @@
 
   &__icon {
     align-items: center;
-    color: $dark-color;
+    color: $brown;
     display: flex;
     font-size: 14px;
     text-transform: uppercase;
@@ -75,7 +75,7 @@
   }
   
   &__icon::before {
-    background-color: $orange-color;
+    background-color: $orange;
     border-radius: 25px;
     display: flex;
     flex-direction: row;

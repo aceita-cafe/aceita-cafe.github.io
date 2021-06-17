@@ -36,7 +36,7 @@
 
   &__resume {
     align-items: center;
-    background-color: $orange-color;
+    background-color: $orange;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -67,7 +67,7 @@
   }
 
   &__title {
-    color: $light-color;
+    color: $white;
 
     @media screen and (min-width: 701px) {
       font-size: 42px;
@@ -79,7 +79,7 @@
   }
 
   &__decoration {
-    background-color: $dark-color;
+    background-color: $brown;
     border-radius: 25px;
     position: relative;
     border: none;
@@ -101,7 +101,7 @@
   &__text {
     display: flex;
     position: relative;
-    color: $light-color;
+    color: $white;
     font-size: 16px;
     line-height: 21.2px;
     text-align: center;

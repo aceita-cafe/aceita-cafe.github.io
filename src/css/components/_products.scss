@@ -1,0 +1,32 @@
+.products {
+  border-top: solid 1px $grey-light;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  position: relative;
+  top: 76px;
+  width: 100%;
+
+
+  &__title {
+    color: $brown;
+    font-size: 34px;
+    margin-bottom: 65px;
+    margin-top: 60px;
+  }
+
+  &__gallery {
+    position: relative;
+    columns: 400px 3;
+    height: auto;
+    margin: 0 auto;
+
+    @media screen and (min-width: 401px) {
+      width: 80%;
+    }
+
+    @media screen and (max-width: 400px) {
+      max-width: 95%;
+    }
+  }
+}

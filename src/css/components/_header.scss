@@ -25,7 +25,7 @@
     }
   
     @media screen and (max-width:700px) {
-      background-color: $light-color;
+      background-color: $white;
       display: flex;
       flex-direction: column;
       height: auto;
@@ -43,7 +43,7 @@
   }
   
   &__text {
-    color: $grey-color;
+    color: $grey;
     font-size: 14px;
     font-weight:bold;
     margin-right: 25px;
@@ -65,7 +65,7 @@
   }
   
   &__text:first-of-type {
-    color: $orange-color;
+    color: $orange;
   }
   
   &__button {
@@ -105,7 +105,7 @@
   
   &__social {
     align-items: center;
-    background-color: $orange-color;
+    background-color: $orange;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 20px;

@@ -1,5 +1,6 @@
 import { headerDropdown } from "./js/header";
-import { close } from "./js/modal";
+import { showcaseList } from "./js/showcase.js";
+import { showcase } from "./data/showcase.json";
 
 document.querySelector('#dropdownButton').addEventListener('click', headerDropdown);
 
@@ -12,10 +13,9 @@ window.addEventListener('click', function(event) {
   }
 })
 
+const showcaseContainer = document.querySelector(".showcase__gallery")
+showcase.forEach((item) => {
+  const showcaseItems = showcaseList(item);
 
-
-
-
-
-
-
+  showcaseContainer.innerHTML = showcaseContainer.innerHTML + showcaseItems
+})

@@ -122,7 +122,7 @@ module.exports = {
   "products": [{
     "id": "1",
     "name": "Cordilheiras do Caparaó - Chocolate",
-    "image": "cafe-caparao-junino.png"
+    "image": "cafe-caparao-chocolate.png"
   }, {
     "id": "2",
     "name": "Cordilheiras do Caparaó - Café Junino",
@@ -146,45 +146,247 @@ module.exports = {
   }, {
     "id": "7",
     "name": "Constantino - Clássico",
-    "image": "cafe-constantino-500.png"
+    "image": "cafe-constantino-500g.png"
   }, {
     "id": "8",
-    "name": "Forquilha do Rio - Especial",
-    "image": ""
+    "name": "Forquilha do Rio - Caparaó Amarelo",
+    "image": "cafe-forquilha-do-rio-amarelo.png"
   }, {
     "id": "9",
     "name": "Recanto dos Tucanos - Microlote Sol Poente",
-    "image": ""
+    "image": "cafe-recanto-dos-tucanos-sol-poente.png"
   }, {
     "id": "10",
     "name": "Recanto dos Tucanos - Tradicional",
-    "image": ""
+    "image": "cafe-recanto-dos-tucanos-trad.png"
   }, {
     "id": "11",
     "name": "Recanto dos Tucanos - Microlote Jatai",
-    "image": ""
+    "image": "cafe-recanto-dos-tucanos-jatai.png"
   }, {
     "id": "12",
     "name": "Sítio Café das Montanhas - Catuai 62 Amarelo",
-    "image": ""
+    "image": "cafe-das-montanhas-amarelo.png"
   }, {
     "id": "13",
     "name": "Sítio Café das Montanhas - Microlote Fermentação Natural",
-    "image": ""
+    "image": "cafe-das-montanhas-natural.png"
   }, {
     "id": "14",
     "name": "Sítio Café das Montanhas - Catuai 44 Vermelho",
-    "image": ""
+    "image": "cafe-das-montanhas-vermelho.png"
   }, {
     "id": "15",
     "name": "Bazilli - Torrefação Artesanal",
-    "image": ""
+    "image": "cafe-bazzili.png"
   }]
 };
-},{}],"products.js":[function(require,module,exports) {
+},{}],"data/modal.json":[function(require,module,exports) {
+module.exports = {
+  "data": {
+    "1": {
+      "name": " Cordilheiras do Caparaó - Chocolate",
+      "variation": "Catuaí Vermelho.",
+      "sensory": "Notas de chocolate e cacau.",
+      "process": "Secagem natural e em terreiro suspenso.",
+      "highlights": "83-84 pontos.",
+      "madeby": "Deneval Miranda Vieira e família.",
+      "altitude": "1.000 a 1.200 metros.",
+      "region": "Serra do Caparaó, ES"
+    },
+    "2": {
+      "name": "Cordilheiras do Caparaó - Café Junino",
+      "variation": "Mokinha Catuaí Vermelho 785",
+      "sensory": "Corpo aveludado, doçura alta, acidez brilhante e notas de açúcar mascavo, mel, papa de milho verde e frutas vermelhas.",
+      "process": "Colheita tardia e descascado",
+      "highlights": "88-89 pontos.",
+      "madeby": "Deneval Miranda Vieira e família.",
+      "altitude": "1.000 a 1.200 metros.",
+      "region": "Serra do Caparaó, ES"
+    },
+    "3": {
+      "name": "Cordilheiras do Caparaó - Café da Rosa",
+      "variation": "Catuaí Vermelho 785.",
+      "sensory": "Acidez incrivelmente brilhante e vibrante, corpo aveludado, marcante, com notas de especiarias, menta, alecrim, mel, chá de rosas e frutado.",
+      "process": "Secagem natural e em terreiro suspenso.",
+      "highlights": "88 pontos.",
+      "madeby": "Deneval Miranda Vieira e família.",
+      "altitude": "1.000 a 1.200 metros.",
+      "region": "Serra do Caparaó, ES"
+    },
+    "4": {
+      "name": "Douro Microlote Campeão do Coffee of The Year 2020",
+      "variation": "Catucaí 2SL amarelo seleção (CAK)",
+      "sensory": "Alta doçura, que apresenta notas de rapadura e melaço, proporcionando uma acidez licorosa. ",
+      "process": "Lavado",
+      "highlights": "Campeão do Coffee of The Year 2020.",
+      "madeby": "Família Douro",
+      "altitude": "1.000 metros.",
+      "region": "Montanhas do Espirito Santo"
+    },
+    "5": {
+      "name": "Saint’ Clair - Mel Cítrico",
+      "variation": "Catucai Amarelo 100% Arábica",
+      "sensory": "Mel cítrico com aroma intenso e acidez média",
+      "process": "Torra média ",
+      "highlights": "-",
+      "madeby": "Denilson Antônio Costa.",
+      "altitude": "1.150 metros.",
+      "region": "Ilicínea, MG"
+    },
+    "6": {
+      "name": "Saint’ Clair - Tradicional",
+      "variation": "100% Arábica Mundo Novo",
+      "sensory": "Encorpado, robusto com perfume intenso.",
+      "process": "Torra média ",
+      "highlights": "-",
+      "madeby": "Claudio Antônio da Cunha.",
+      "altitude": "1.000 metros.",
+      "region": "Sul de Minas"
+    },
+    "7": {
+      "name": "Constantino - Clássico",
+      "variation": "100% Arábica - Catuaí Amarelo e Mundo Novo",
+      "sensory": "Intensidade média com aroma frutado e média acidez.",
+      "process": "Torra média",
+      "highlights": "-",
+      "madeby": "Fazendo Ipoméia.",
+      "altitude": "1.100 metros.",
+      "region": "Nordeste de São Paulo"
+    },
+    "8": {
+      "name": "Forquilha do Rio - Caparaó Amarelo",
+      "variation": "Caparaó Amarelo",
+      "sensory": "Frutas amarelas, açucar mascavo, caramelo e aroma floral.",
+      "process": "Torra média clara",
+      "highlights": "87 pontos",
+      "madeby": "Afonso Lacerda e Altilina Lacerda.",
+      "altitude": "1.300 metros",
+      "region": "Caparaó capixaba"
+    },
+    "9": {
+      "name": "Recanto dos Tucanos - Microlote Sol Poente",
+      "variation": "Catuaí vermelho 144 & Catucaí amarelo 2SL",
+      "sensory": "Acidez equilibrada, frutado e encorpado.",
+      "process": "Torra Clara",
+      "highlights": "-",
+      "madeby": "Wilians Valério Júnior",
+      "altitude": "1.350 metros",
+      "region": "Alto Caparaó/MG"
+    },
+    "10": {
+      "name": "Recanto dos Tucanos - Tradicional",
+      "variation": "100% Arábica - Catuaí Amarelo e Mundo Novo",
+      "sensory": "Intensidade média com aroma frutado e média acidez.",
+      "process": "Torra média",
+      "highlights": "-",
+      "madeby": "Fazendo Ipoméia.",
+      "altitude": "1.100 metros.",
+      "region": "Nordeste de São Paulo"
+    },
+    "11": {
+      "name": "Recanto dos Tucanos - Microlote Jatai",
+      "variation": "Catuaí vermelho 144 & Catucaí amarelo 2SL",
+      "sensory": "Encorpado com acidez equilibrada com notas de rapatura e futras cítricas.",
+      "process": "Torra média",
+      "highlights": "-",
+      "madeby": "Wilians Valério Júnior",
+      "altitude": "1.350 metros.",
+      "region": "Alto Caparaó/MG"
+    },
+    "12": {
+      "name": "Sítio Café das Montanhas - Catuai 62 Amarelo",
+      "variation": "Catuaí 62 Amarelo",
+      "sensory": " Amanteigado, frutas amarelas, mel, floral e corpo aveludado.",
+      "process": "Cereja Natural",
+      "highlights": "86 pontos.",
+      "madeby": "Sirlei Cezar",
+      "altitude": "1.150 metros.",
+      "region": "Serra do Caparaó"
+    },
+    "13": {
+      "name": "Constantino - Clássico",
+      "variation": "100% Arábica - Catuaí Amarelo e Mundo Novo",
+      "sensory": "Intensidade média com aroma frutado e média acidez.",
+      "process": "Torra média",
+      "highlights": "-",
+      "madeby": "Fazendo Ipoméia.",
+      "altitude": "1.100 metros.",
+      "region": "Nordeste de São Paulo"
+    },
+    "14": {
+      "name": "Constantino - Clássico",
+      "variation": "100% Arábica - Catuaí Amarelo e Mundo Novo",
+      "sensory": "Intensidade média com aroma frutado e média acidez.",
+      "process": "Torra média",
+      "highlights": "-",
+      "madeby": "Fazendo Ipoméia.",
+      "altitude": "1.100 metros.",
+      "region": "Nordeste de São Paulo"
+    },
+    "15": {
+      "name": "Bazilli - Torrefação Artesanal",
+      "variation": "100% Arábica",
+      "sensory": "Acidez equilibrada com aroma achocolatado.",
+      "process": "Torra média",
+      "highlights": "-",
+      "madeby": "Fazendo Ipoméia.",
+      "altitude": "1.000 metros.",
+      "region": "Divinolândia/SP"
+    }
+  }
+};
+},{}],"js/modal.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.openModal = void 0;
+
+var _modal = require("../data/modal.json");
+
+var coffeeName = document.querySelector("[data-name]");
+var coffeeVariation = document.querySelector("[data-variation]");
+var coffeeSensory = document.querySelector("[data-sensory");
+var coffeeProcess = document.querySelector("[data-process");
+var coffeeHighLights = document.querySelector("[data-highlights");
+var coffeeMadeBy = document.querySelector("[data-madeby");
+var coffeeAltitude = document.querySelector("[data-altitude");
+var coffeeRegion = document.querySelector("[data-region");
+
+var openModal = function openModal(id) {
+  document.getElementById('modal').classList.toggle('is-visible');
+  document.getElementById('closeArea').classList.toggle('is-visible');
+  coffeeName.innerHTML = _modal.data[id].name;
+  coffeeVariation.innerHTML = _modal.data[id].variation;
+  coffeeSensory.innerHTML = _modal.data[id].sensory;
+  coffeeProcess.innerHTML = _modal.data[id].process;
+  coffeeHighLights.innerHTML = _modal.data[id].highlights;
+  coffeeMadeBy.innerHTML = _modal.data[id].madeby;
+  coffeeAltitude.innerHTML = _modal.data[id].altitude;
+  coffeeRegion.innerHTML = _modal.data[id].region;
+};
+
+exports.openModal = openModal;
+
+var closeModal = function closeModal(id) {
+  var modal = document.getElementById('modal');
+  var close = document.getElementById('closeArea');
+
+  if (modal.classList.contains('is-visible')) {
+    close.classList.remove('is-visible');
+    modal.classList.remove('is-visible');
+  }
+};
+
+window.closeModal = closeModal;
+},{"../data/modal.json":"data/modal.json"}],"products.js":[function(require,module,exports) {
 "use strict";
 
 var _products = require("./data/products.json");
+
+var _modal = require("./js/modal.js");
 
 var productsList = function productsList(products) {
   return "\n    <img class=\"showcase__images\" src=\"".concat(products.image, "\" />\n    <div class=\"showcase__container\">\n      <h5 class=\"showcase__name\">").concat(products.name, "</h5>\n      <button class=\"button button--stroke button--details\" onclick=\"openModal(").concat(products.id, ")\">Detalhes</button>\n      <a class=\"button button--whatsapp\" href=\"https://wa.me/556699511499\" target=\"_blank\">Comprar</a>\n    </div>\n  ");
@@ -196,7 +398,9 @@ _products.products.forEach(function (item) {
   var productsItems = productsList(item);
   productsContainer.innerHTML = productsContainer.innerHTML + productsItems;
 });
-},{"./data/products.json":"data/products.json"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+
+window.openModal = _modal.openModal;
+},{"./data/products.json":"data/products.json","./js/modal.js":"js/modal.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -224,7 +428,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35953" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42105" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

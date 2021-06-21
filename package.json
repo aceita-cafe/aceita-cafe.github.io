@@ -6,7 +6,7 @@
   "author": "PinhoOn <pinhoonjob@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel src/index.pug src/products/index.pug --out-dir docs",
+    "dev": "parcel src/index.pug src/products.pug --out-dir docs",
     "build": "rm -rf docs && parcel build src/*.pug --out-dir docs --public-url ./ && echo aceitacafe.com.br >> docs/CNAME"
   },
   "devDependencies": {

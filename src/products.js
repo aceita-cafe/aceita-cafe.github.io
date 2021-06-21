@@ -1,4 +1,5 @@
 import { products } from "./data/products.json" 
+import { openModal } from './js/modal.js'
 
 const productsList = (products) => {
   return `
@@ -17,3 +18,5 @@ products.forEach((item) => {
 
   productsContainer.innerHTML = productsContainer.innerHTML + productsItems
 })
+
+window.openModal = openModal;

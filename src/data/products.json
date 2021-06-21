@@ -3,7 +3,7 @@
     {
       "id":"1",
       "name": "Cordilheiras do Caparaó - Chocolate",
-      "image": "cafe-caparao-junino.png"
+      "image": "cafe-caparao-chocolate.png"
     },
 
     {
@@ -38,47 +38,47 @@
     {
       "id":"7",
       "name": "Constantino - Clássico",
-      "image": "cafe-constantino-500.png"
+      "image": "cafe-constantino-500g.png"
     },
     {
       "id":"8",
-      "name": "Forquilha do Rio - Especial",
-      "image": ""
+      "name": "Forquilha do Rio - Caparaó Amarelo",
+      "image": "cafe-forquilha-do-rio-amarelo.png"
     },
     {
       "id":"9",
       "name": "Recanto dos Tucanos - Microlote Sol Poente",
-      "image": ""
+      "image": "cafe-recanto-dos-tucanos-sol-poente.png"
     },
     {
       "id":"10",
       "name": "Recanto dos Tucanos - Tradicional",
-      "image": ""
+      "image": "cafe-recanto-dos-tucanos-trad.png"
     },
     {
       "id":"11",
       "name": "Recanto dos Tucanos - Microlote Jatai",
-      "image": ""
+      "image": "cafe-recanto-dos-tucanos-jatai.png"
     },
     {
       "id":"12",
       "name": "Sítio Café das Montanhas - Catuai 62 Amarelo",
-      "image": ""
+      "image": "cafe-das-montanhas-amarelo.png"
     },
     {
       "id":"13",
       "name": "Sítio Café das Montanhas - Microlote Fermentação Natural",
-      "image": ""
+      "image": "cafe-das-montanhas-natural.png"
     },
     {
       "id":"14",
       "name": "Sítio Café das Montanhas - Catuai 44 Vermelho",
-      "image": ""
+      "image": "cafe-das-montanhas-vermelho.png"
     },
     {
       "id":"15",
       "name": "Bazilli - Torrefação Artesanal",
-      "image": ""
-    },
+      "image": "cafe-bazzili.png"
+    }
   ]
 }

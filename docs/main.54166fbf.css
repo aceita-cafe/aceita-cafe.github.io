@@ -432,7 +432,6 @@ h1, h2, h3, h4, h5, h6, button, a {
 }
 .showcase__images {
   display: flex;
-  flex-wrap: wrap;
   height: 330px;
   margin: 0 auto;
   position: relative;

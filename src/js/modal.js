@@ -9,7 +9,7 @@ const coffeeMadeBy = document.querySelector("[data-madeby");
 const coffeeAltitude = document.querySelector("[data-altitude");
 const coffeeRegion = document.querySelector("[data-region");
 
-const openModal = (id) => {
+export const openModal = (id) => {
   document.getElementById('modal').classList.toggle('is-visible');
   document.getElementById('closeArea').classList.toggle('is-visible');
   coffeeName.innerHTML = data[id].name;
@@ -33,5 +33,5 @@ const closeModal = (id) => {
 }
 
 window.closeModal = closeModal;
-window.openModal = openModal;
+
 

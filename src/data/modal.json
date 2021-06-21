@@ -70,6 +70,114 @@
       "madeby": "Claudio Antônio da Cunha." ,
       "altitude": "1.000 metros." ,
       "region": "Sul de Minas" 
+    },
+
+    "7":
+    {
+      "name": "Constantino - Clássico" ,
+      "variation": "100% Arábica - Catuaí Amarelo e Mundo Novo" ,
+      "sensory": "Intensidade média com aroma frutado e média acidez." ,
+      "process": "Torra média" ,
+      "highlights": "-" ,
+      "madeby": "Fazendo Ipoméia." ,
+      "altitude": "1.100 metros." ,
+      "region": "Nordeste de São Paulo" 
+    },
+    
+    "8":
+    {
+      "name": "Forquilha do Rio - Caparaó Amarelo" ,
+      "variation": "Caparaó Amarelo" ,
+      "sensory": "Frutas amarelas, açucar mascavo, caramelo e aroma floral." ,
+      "process": "Torra média clara" ,
+      "highlights": "87 pontos" ,
+      "madeby": "Afonso Lacerda e Altilina Lacerda." ,
+      "altitude": "1.300 metros" ,
+      "region": "Caparaó capixaba" 
+    },
+    
+    "9":
+    {
+      "name": "Recanto dos Tucanos - Microlote Sol Poente" ,
+      "variation": "Catuaí vermelho 144 & Catucaí amarelo 2SL" ,
+      "sensory": "Acidez equilibrada, frutado e encorpado." ,
+      "process": "Torra Clara" ,
+      "highlights": "-" ,
+      "madeby": "Wilians Valério Júnior" ,
+      "altitude": "1.350 metros" ,
+      "region": "Alto Caparaó/MG" 
+    },
+    
+    "10":
+    {
+      "name": "Recanto dos Tucanos - Tradicional" ,
+      "variation": "100% Arábica - Catuaí Amarelo e Mundo Novo" ,
+      "sensory": "Intensidade média com aroma frutado e média acidez." ,
+      "process": "Torra média" ,
+      "highlights": "-" ,
+      "madeby": "Fazendo Ipoméia." ,
+      "altitude": "1.100 metros." ,
+      "region": "Nordeste de São Paulo" 
+    },
+
+    "11":
+    {
+      "name": "Recanto dos Tucanos - Microlote Jatai" ,
+      "variation": "Catuaí vermelho 144 & Catucaí amarelo 2SL" ,
+      "sensory": "Encorpado com acidez equilibrada com notas de rapatura e futras cítricas." ,
+      "process": "Torra média" ,
+      "highlights": "-" ,
+      "madeby": "Wilians Valério Júnior" ,
+      "altitude": "1.350 metros." ,
+      "region": "Alto Caparaó/MG" 
+    },
+
+    "12":
+    {
+      "name": "Sítio Café das Montanhas - Catuai 62 Amarelo" ,
+      "variation": "Catuaí 62 Amarelo" ,
+      "sensory": " Amanteigado, frutas amarelas, mel, floral e corpo aveludado." ,
+      "process": "Cereja Natural" ,
+      "highlights": "86 pontos." ,
+      "madeby": "Sirlei Cezar" ,
+      "altitude": "1.150 metros." ,
+      "region": "Serra do Caparaó" 
+    },
+
+    "13":
+    {
+      "name": "Constantino - Clássico" ,
+      "variation": "100% Arábica - Catuaí Amarelo e Mundo Novo" ,
+      "sensory": "Intensidade média com aroma frutado e média acidez." ,
+      "process": "Torra média" ,
+      "highlights": "-" ,
+      "madeby": "Fazendo Ipoméia." ,
+      "altitude": "1.100 metros." ,
+      "region": "Nordeste de São Paulo" 
+    },
+
+    "14":
+    {
+      "name": "Constantino - Clássico" ,
+      "variation": "100% Arábica - Catuaí Amarelo e Mundo Novo" ,
+      "sensory": "Intensidade média com aroma frutado e média acidez." ,
+      "process": "Torra média" ,
+      "highlights": "-" ,
+      "madeby": "Fazendo Ipoméia." ,
+      "altitude": "1.100 metros." ,
+      "region": "Nordeste de São Paulo" 
+    },
+
+    "15":
+    {
+      "name": "Bazilli - Torrefação Artesanal" ,
+      "variation": "100% Arábica" ,
+      "sensory": "Acidez equilibrada com aroma achocolatado." ,
+      "process": "Torra média" ,
+      "highlights": "-" ,
+      "madeby": "Fazendo Ipoméia." ,
+      "altitude": "1.000 metros." ,
+      "region": "Divinolândia/SP" 
     }
   }
 }

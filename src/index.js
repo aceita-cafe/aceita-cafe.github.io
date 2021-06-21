@@ -1,6 +1,7 @@
 import { headerDropdown } from "./js/header";
 import { showcaseList } from "./js/showcase.js";
 import { showcase } from "./data/showcase.json";
+import { openModal } from './js/modal.js'
 
 document.querySelector('#dropdownButton').addEventListener('click', headerDropdown);
 
@@ -19,3 +20,5 @@ showcase.forEach((item) => {
 
   showcaseContainer.innerHTML = showcaseContainer.innerHTML + showcaseItems
 })
+
+window.openModal = openModal;

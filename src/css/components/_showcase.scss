@@ -20,7 +20,7 @@
   &__images {
     display: flex;
     height: 330px;
-    margin: 0 auto;
+    margin: 0 auto -135px;
     position: relative;
     max-width: 300px;
     z-index: 1;
@@ -30,12 +30,12 @@
     align-items: center;
     background-color: $grey-light;
     border-radius: 25px;
-    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     height: 310px;
+    justify-content: center;
+    margin-bottom: 30px;
     position: relative;
-    top: -130px;
   }
 
   &__name {
@@ -52,18 +52,17 @@
     justify-content: center;
     align-items: center;
     background-color: $grey-light;
-    margin: -90px 15px 50px;
+    margin: 30px auto 50px;
     padding: 10px;
+    width: 100%;
     
     @media screen and (min-width: 1251px) {
       flex-direction: row;
       height: 105px;
-      width: calc(100% - 15px);
     }
 
     @media screen and (max-width: 1250px) {
       height: 105px;
-      width: 100%;
     }
 
     @media screen and (max-width: 630px) {

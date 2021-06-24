@@ -1,5 +1,6 @@
 import { products } from "./data/products.json" 
 import { openModal } from './js/modal.js'
+import { headerDropdown } from "./js/header";
 
 const productsList = (products) => {
   return `
@@ -19,6 +20,17 @@ products.forEach((item) => {
   const productsItems = productsList(item);
 
   productsContainer.innerHTML = productsContainer.innerHTML + productsItems
+})
+
+document.querySelector('#dropdownButton').addEventListener('click', headerDropdown);
+
+window.addEventListener('click', function(event) {
+  if (!event.target.matches('#dropdownButton')) {
+    var dropdown = document.getElementById('headerNavDropdown');
+    if (dropdown.classList.contains('is-visible')) {
+      dropdown.classList.remove('is-visible');
+    }
+  }
 })
 
 window.openModal = openModal;

@@ -64,10 +64,6 @@
     opacity: .75;
   }
   
-  &__text:first-of-type {
-    color: $orange;
-  }
-  
   &__button {
     
     @media screen and (min-width:701px) {

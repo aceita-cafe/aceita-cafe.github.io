@@ -1,15 +1,15 @@
 header.header
   nav#headerNavDropdown.header__menu
-    a.header__text(href="/" class=currentPath == 'index' ? 'is-active': '')
+    a.header__text(href="/" class=currentPath == 'index' ? 'is-active': '') 
       span Início
-    a.header__text(href="./products.pug" class=currentPath == 'products' ? 'is-active': '')
+    a.header__text(href="./products.pug" class=currentPath == 'products' ? 'is-active': '') 
       span Produtos
-    a.header__text(href="/#degustacoes" class=currentPath == 'products' ? 'is-hidden': '')
+    a.header__text(href="/#degustacoes") 
       span Degustações
     a.header__text(href="#contato")
       span Contato
-    button#dropdownButton.header__button
+  button#dropdownButton.header__button
   nav.header__nav
     a.header__social.header__social--whatsapp(href="https://wa.me/556699511499" target='_blank')
-    a.header__social.header__social--instagram(href="https://www.instagram.com/aceitacafeoficial/" target='_blank')
-    a.header__social.header__social--mail(href="mailto:mark_vpg@hotmail.com" target='_blank')
+    a.header__social.header__social--instagram(href="https://www.instagram.com/aceitacafeoficial/" target='_blank')     
+    a.header__social.header__social--mail(href="mailto:mark_vpg@hotmail.com" target='_blank') 

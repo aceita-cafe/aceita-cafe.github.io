@@ -2,8 +2,10 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
+  padding: 0;
+  margin: 0;
 
   @media screen and (max-width: 770px) {
     flex-wrap: nowrap;
@@ -13,28 +15,20 @@
   &__item {
     
     @media screen and (min-width: 1321px) {
-      max-width: 26%;
-      margin: 0 20px 0 0;
+      max-width: 32%;
     }
 
     @media screen and (max-width: 1320px) {
-      max-width: 30%;
-      margin: 0 20px 0 0;
+      max-width: calc(50% - 10px);
     }
 
-    @media screen and (max-width: 1111px) {
-      max-width: 43%;
-      margin: 0 50px 0 0;
-    }
 
-    @media screen and (max-width: 770px) {
-      min-width: 85%;
+    @media screen and (max-width: 800px) {
+      min-width: 100%;
       margin: 0 auto;
-      margin-left: 10px;
     }
 
     @media screen and (max-width: 385px) {
-      margin-left: -20px;
       min-width: 100%;
     }
   }

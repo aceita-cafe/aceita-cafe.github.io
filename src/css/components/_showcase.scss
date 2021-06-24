@@ -3,10 +3,12 @@
   color: $brown;
   display: flex;
   flex-direction: column;
-  width: 100%;
   min-height: 1300px;
+  overflow-x: hidden;
+  padding: 0 10%;
   position: relative;
   text-align: center;
+  width: 100%;
 
   &__title {
     display: flex;
@@ -20,7 +22,7 @@
     height: 330px;
     margin: 0 auto;
     position: relative;
-    width: 300px;
+    max-width: 300px;
     z-index: 1;
   }
 
@@ -50,21 +52,21 @@
     justify-content: center;
     align-items: center;
     background-color: $grey-light;
-    padding: 10px;
     margin: -90px 15px 50px;
-
+    padding: 10px;
+    
     @media screen and (min-width: 1251px) {
       flex-direction: row;
       height: 105px;
-      width: 1230px;
+      width: calc(100% - 15px);
     }
 
     @media screen and (max-width: 1250px) {
       height: 105px;
-      width: 95%;
+      width: 100%;
     }
 
-    @media screen and (max-width: 540px) {
+    @media screen and (max-width: 630px) {
       flex-direction: column;
       height: 200px;
     }

@@ -137,7 +137,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.showcaseList = void 0;
 
 var showcaseList = function showcaseList(showcase) {
-  return "\n    <img class=\"showcase__images\" src=\"".concat(showcase.image, "\" />\n    <div class=\"showcase__container\">\n      <h5 class=\"showcase__name\">").concat(showcase.name, "</h5>\n      <button class=\"button button--stroke button--details\" onclick=\"openModal(").concat(showcase.id, ")\">Detalhes</button>\n      <a class=\"button button--whatsapp\" href=\"https://wa.me/556699511499\" target=\"_blank\">Comprar</a>\n    </div>\n  ");
+  return "\n  <li class=\"list__item\">\n    <img class=\"showcase__images\" src=\"".concat(showcase.image, "\" />\n    <div class=\"showcase__container\">\n      <h5 class=\"showcase__name\">").concat(showcase.name, "</h5>\n      <button class=\"button button--stroke button--details\" onclick=\"openModal(").concat(showcase.id, ")\">Detalhes</button>\n      <a class=\"button button--whatsapp\" href=\"https://wa.me/556699511499\" target=\"_blank\">Comprar</a>\n    </div>\n  </li>\n  ");
 };
 
 exports.showcaseList = showcaseList;
@@ -390,7 +390,7 @@ window.addEventListener('click', function (event) {
     }
   }
 });
-var showcaseContainer = document.querySelector(".showcase__gallery");
+var showcaseContainer = document.querySelector(".showcase__list");
 
 _showcase2.showcase.forEach(function (item) {
   var showcaseItems = (0, _showcase.showcaseList)(item);
@@ -426,7 +426,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42105" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45133" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

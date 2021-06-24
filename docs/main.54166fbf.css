@@ -16,6 +16,10 @@ h1, h2, h3, h4, h5, h6, button, a {
   font-family: "Poppins", sans-serif;
 }
 
+li {
+  list-style: none;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -76,7 +80,7 @@ h1, h2, h3, h4, h5, h6, button, a {
 .button--details::before {
   content: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.36938 0H8.70271C8.82123 0 8.88049 0.0592593 8.88049 0.177778V15.8222C8.88049 15.9407 8.82123 16 8.70271 16H7.36938C7.25086 16 7.1916 15.9407 7.1916 15.8222V0.177778C7.1916 0.0592593 7.25086 0 7.36938 0Z' fill='%23FF8110'/%3E%3Cpath d='M0.569379 7.15556H15.5027C15.6212 7.15556 15.6805 7.21481 15.6805 7.33333V8.66667C15.6805 8.78518 15.6212 8.84444 15.5027 8.84444H0.569379C0.450861 8.84444 0.391602 8.78518 0.391602 8.66667V7.33333C0.391602 7.21481 0.450861 7.15556 0.569379 7.15556Z' fill='%23FF8110'/%3E%3C/svg%3E%0A");
 }
-@media screen and (min-width: 381px) {
+@media screen and (min-width: 451px) {
   .button--details::before {
     margin-right: 10px;
   }
@@ -88,12 +92,12 @@ h1, h2, h3, h4, h5, h6, button, a {
 .button--details {
   margin-right: 20px;
 }
-@media screen and (min-width: 381px) {
+@media screen and (min-width: 451px) {
   .button--details {
     padding: 10px 20px;
   }
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 450px) {
   .button--details {
     font-size: 0;
     height: 40px;
@@ -137,6 +141,51 @@ h1, h2, h3, h4, h5, h6, button, a {
     animation-timing-function: ease-out;
   }
 }
+.list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+@media screen and (max-width: 770px) {
+  .list {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1321px) {
+  .list__item {
+    max-width: 26%;
+    margin: 0 20px 0 0;
+  }
+}
+@media screen and (max-width: 1320px) {
+  .list__item {
+    max-width: 30%;
+    margin: 0 20px 0 0;
+  }
+}
+@media screen and (max-width: 1111px) {
+  .list__item {
+    max-width: 43%;
+    margin: 0 50px 0 0;
+  }
+}
+@media screen and (max-width: 770px) {
+  .list__item {
+    min-width: 85%;
+    margin: 0 auto;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 385px) {
+  .list__item {
+    margin-left: -20px;
+    min-width: 100%;
+  }
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -202,9 +251,6 @@ h1, h2, h3, h4, h5, h6, button, a {
 }
 .header__text:hover {
   opacity: 0.75;
-}
-.header__text:first-of-type {
-  color: #FF8110;
 }
 @media screen and (min-width: 701px) {
   .header__button {
@@ -302,9 +348,8 @@ h1, h2, h3, h4, h5, h6, button, a {
     width: 205px;
   }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 380px) {
   .hero__logo {
-    width: 170px;
     margin-left: 15px;
   }
 }
@@ -317,28 +362,28 @@ h1, h2, h3, h4, h5, h6, button, a {
   text-align: center;
   z-index: 1;
 }
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 751px) {
   .hero__resume {
     border-radius: 25px;
     min-height: 400px;
     margin: 60px auto -350px;
-    padding: 10px 50px;
+    padding: 10px 50px 40px;
     width: 80%;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   .hero__resume {
     border-radius: 10px;
-    margin: 100px 30px -200px;
+    margin: 100px 30px -300px;
     padding-top: 50px;
     padding-bottom: 50px;
     height: auto;
     text-align: center;
   }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 380px) {
   .hero__resume {
-    margin-top: 0;
+    margin-top: 20px;
   }
 }
 .hero__title {
@@ -412,9 +457,8 @@ h1, h2, h3, h4, h5, h6, button, a {
   align-items: center;
   color: #5A1100;
   display: flex;
-  flex-wrap: nowrap;
   flex-direction: column;
-  max-width: 100%;
+  width: 100%;
   min-height: 1300px;
   position: relative;
   text-align: center;
@@ -423,11 +467,6 @@ h1, h2, h3, h4, h5, h6, button, a {
   display: flex;
   font-size: 34px;
   margin-bottom: 65px;
-  position: relative;
-}
-.showcase__gallery {
-  columns: 400px 3;
-  height: auto;
   position: relative;
 }
 .showcase__images {
@@ -446,16 +485,8 @@ h1, h2, h3, h4, h5, h6, button, a {
   display: flex;
   flex-wrap: wrap;
   height: 310px;
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
   top: -130px;
-  width: 95%;
-}
-@media screen and (max-width: 380px) {
-  .showcase__container {
-    width: 300px;
-  }
 }
 .showcase__name {
   font-size: 20px;
@@ -914,22 +945,6 @@ h1, h2, h3, h4, h5, h6, button, a {
   margin-bottom: 65px;
   margin-top: 60px;
 }
-.products__gallery {
-  position: relative;
-  columns: 400px 3;
-  height: auto;
-  margin: 0 auto;
-}
-@media screen and (min-width: 401px) {
-  .products__gallery {
-    width: 80%;
-  }
-}
-@media screen and (max-width: 400px) {
-  .products__gallery {
-    max-width: 95%;
-  }
-}
 
 .is-visible {
   visibility: visible;
@@ -942,6 +957,10 @@ h1, h2, h3, h4, h5, h6, button, a {
 
 .flex-enable {
   display: flex;
+}
+
+.is-active {
+  color: #FF8110;
 }
 
 /*# sourceMappingURL=/main.54166fbf.css.map */

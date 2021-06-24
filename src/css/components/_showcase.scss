@@ -2,9 +2,8 @@
   align-items: center;
   color: $brown;
   display: flex;
-  flex-wrap:nowrap;
   flex-direction: column;
-  max-width: 100%;
+  width: 100%;
   min-height: 1300px;
   position: relative;
   text-align: center;
@@ -13,12 +12,6 @@
     display: flex;
     font-size: 34px;
     margin-bottom: 65px;
-    position: relative;
-  }
-  
-  &__gallery { 
-    columns: 400px 3;
-    height: auto;
     position: relative;
   }
 
@@ -39,15 +32,8 @@
     display: flex;
     flex-wrap: wrap;
     height: 310px;
-    margin-left: auto;
-    margin-right: auto;
     position: relative;
     top: -130px;
-    width: 95%;
-      
-    @media screen and (max-width:380px) {
-      width: 300px;
-    }
   }
 
   &__name {

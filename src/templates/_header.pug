@@ -1,13 +1,13 @@
 header.header
   nav#headerNavDropdown.header__menu
-    a.header__text(href="/") 
-      span Início
-    a.header__text(href="/#produtos") 
-      span Produtos
+    a.header__text(href="/" class=currentPath == 'index' ? 'is-active': '') 
+        span Início
+    a.header__text(href="./products.pug" class=currentPath == 'products' ? 'is-active': '') 
+        span Produtos
     a.header__text(href="/#degustacoes") 
-      span Degustações
+        span Degustações
     a.header__text(href="#contato")
-      span Contato
+        span Contato
   button#dropdownButton.header__button
   nav.header__nav
     a.header__social.header__social--whatsapp(href="https://wa.me/556699511499" target='_blank')

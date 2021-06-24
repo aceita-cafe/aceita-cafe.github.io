@@ -389,10 +389,10 @@ var _products = require("./data/products.json");
 var _modal = require("./js/modal.js");
 
 var productsList = function productsList(products) {
-  return "\n    <img class=\"showcase__images\" src=\"".concat(products.image, "\" />\n    <div class=\"showcase__container\">\n      <h5 class=\"showcase__name\">").concat(products.name, "</h5>\n      <button class=\"button button--stroke button--details\" onclick=\"openModal(").concat(products.id, ")\">Detalhes</button>\n      <a class=\"button button--whatsapp\" href=\"https://wa.me/556699511499\" target=\"_blank\">Comprar</a>\n    </div>\n  ");
+  return "\n  <li class=\"list__item\">\n    <img class=\"showcase__images\" src=\"".concat(products.image, "\" />\n    <div class=\"showcase__container\">\n      <h5 class=\"showcase__name\">").concat(products.name, "</h5>\n      <button class=\"button button--stroke button--details\" onclick=\"openModal(").concat(products.id, ")\">Detalhes</button>\n      <a class=\"button button--whatsapp\" href=\"https://wa.me/556699511499\" target=\"_blank\">Comprar</a>\n    </div>\n  </li>\n  ");
 };
 
-var productsContainer = document.querySelector(".products__gallery");
+var productsContainer = document.querySelector(".products__list");
 
 _products.products.forEach(function (item) {
   var productsItems = productsList(item);
@@ -428,7 +428,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42105" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45133" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

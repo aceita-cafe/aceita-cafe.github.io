@@ -23,12 +23,12 @@ showcase.forEach((item) => {
 
 Modernizr.on('webp', function(result) {
   if (result) {
-    document.querySelector('.hero').classList.toggle('hero__webp')
-    document.querySelector('.plan').classList.toggle('plan__webp')
+    document.querySelector('.hero').classList.toggle('hero--webp')
+    document.querySelector('.plan').classList.toggle('plan--webp')
 
   } else {
-    document.querySelector('.hero').classList.toggle('hero__no-webp')
-    document.querySelector('.plan').classList.toggle('plan__no-webp')
+    document.querySelector('.hero').classList.toggle('hero--no-webp')
+    document.querySelector('.plan').classList.toggle('plan--no-webp')
   }
 });
 

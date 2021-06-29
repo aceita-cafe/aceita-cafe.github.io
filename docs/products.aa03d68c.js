@@ -320,24 +320,24 @@ module.exports = {
       "region": "Serra do Caparaó"
     },
     "13": {
-      "name": "Constantino - Clássico",
-      "variation": "100% Arábica - Catuaí Amarelo e Mundo Novo",
-      "sensory": "Intensidade média com aroma frutado e média acidez.",
-      "process": "Torra média",
+      "name": "Sítio Café das Montanhas - Microlote Fermentação Natural",
+      "variation": "-",
+      "sensory": "-",
+      "process": "-",
       "highlights": "-",
-      "madeby": "Fazendo Ipoméia.",
-      "altitude": "1.100 metros.",
-      "region": "Nordeste de São Paulo"
+      "madeby": "-",
+      "altitude": "-",
+      "region": "-"
     },
     "14": {
-      "name": "Constantino - Clássico",
-      "variation": "100% Arábica - Catuaí Amarelo e Mundo Novo",
-      "sensory": "Intensidade média com aroma frutado e média acidez.",
-      "process": "Torra média",
+      "name": "Sítio Café das Montanhas - Catuai 44 Vermelho",
+      "variation": "-",
+      "sensory": "-",
+      "process": "-",
       "highlights": "-",
-      "madeby": "Fazendo Ipoméia.",
-      "altitude": "1.100 metros.",
-      "region": "Nordeste de São Paulo"
+      "madeby": "-",
+      "altitude": "-",
+      "region": "-"
     },
     "15": {
       "name": "Bazilli - Torrefação Artesanal",
@@ -466,7 +466,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42831" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33739" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

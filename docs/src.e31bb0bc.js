@@ -299,24 +299,24 @@ module.exports = {
       "region": "Serra do Caparaó"
     },
     "13": {
-      "name": "Constantino - Clássico",
-      "variation": "100% Arábica - Catuaí Amarelo e Mundo Novo",
-      "sensory": "Intensidade média com aroma frutado e média acidez.",
-      "process": "Torra média",
+      "name": "Sítio Café das Montanhas - Microlote Fermentação Natural",
+      "variation": "-",
+      "sensory": "-",
+      "process": "-",
       "highlights": "-",
-      "madeby": "Fazendo Ipoméia.",
-      "altitude": "1.100 metros.",
-      "region": "Nordeste de São Paulo"
+      "madeby": "-",
+      "altitude": "-",
+      "region": "-"
     },
     "14": {
-      "name": "Constantino - Clássico",
-      "variation": "100% Arábica - Catuaí Amarelo e Mundo Novo",
-      "sensory": "Intensidade média com aroma frutado e média acidez.",
-      "process": "Torra média",
+      "name": "Sítio Café das Montanhas - Catuai 44 Vermelho",
+      "variation": "-",
+      "sensory": "-",
+      "process": "-",
       "highlights": "-",
-      "madeby": "Fazendo Ipoméia.",
-      "altitude": "1.100 metros.",
-      "region": "Nordeste de São Paulo"
+      "madeby": "-",
+      "altitude": "-",
+      "region": "-"
     },
     "15": {
       "name": "Bazilli - Torrefação Artesanal",
@@ -405,11 +405,11 @@ _showcase2.showcase.forEach(function (item) {
 
 Modernizr.on('webp', function (result) {
   if (result) {
-    document.querySelector('.hero').classList.toggle('hero__webp');
-    document.querySelector('.plan').classList.toggle('plan__webp');
+    document.querySelector('.hero').classList.toggle('hero--webp');
+    document.querySelector('.plan').classList.toggle('plan--webp');
   } else {
-    document.querySelector('.hero').classList.toggle('hero__no-webp');
-    document.querySelector('.plan').classList.toggle('plan__no-webp');
+    document.querySelector('.hero').classList.toggle('hero--no-webp');
+    document.querySelector('.plan').classList.toggle('plan--no-webp');
   }
 });
 window.openModal = _modal.openModal;
@@ -441,7 +441,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42831" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33739" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

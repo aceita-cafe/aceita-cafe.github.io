@@ -326,10 +326,10 @@ li {
     background-attachment: fixed;
   }
 }
-.hero__no-webp {
+.hero--no-webp {
   background-image: url("/hero-background.03ea884f.png");
 }
-.hero__webp {
+.hero--webp {
   background-image: url("/hero-background.7fcb3d55.webp");
 }
 .hero__logo {
@@ -724,10 +724,10 @@ li {
     background-attachment: fixed;
   }
 }
-.plan__webp {
+.plan--webp {
   background-image: url("/plan-background.7c30955e.webp");
 }
-.plan__no-webp {
+.plan--no-webp {
   background-image: url("/plan-background.d4ef8b5e.png");
 }
 .plan__container {

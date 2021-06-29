@@ -3,82 +3,82 @@
     {
       "id":"1",
       "name": "Cordilheiras do Caparaó - Chocolate",
-      "image": "cafe-caparao-chocolate.png"
+      "image": "cafe-caparao-chocolate.webp"
     },
 
     {
       "id":"2",
       "name": "Cordilheiras do Caparaó - Café Junino",
-      "image": "cafe-caparao-junino.png"
+      "image": "cafe-caparao-junino.webp"
     },
 
     {
       "id":"3",
       "name": "Cordilheiras do Caparaó - Café da Rosa" ,
-      "image": "cafe-caparao-rosa.png"
+      "image": "cafe-caparao-rosa.webp"
     },
 
     {
       "id":"4",
       "name": "Douro Microlote Campeão do Coffee of The Year 2020" ,
-      "image": "cafe-saintclair-douro.png"
+      "image": "cafe-saintclair-douro.webp"
     },
 
     {
       "id":"5",
       "name": "Saint’ Clair - Mel Cítrico" ,
-      "image": "cafe-saintclair-mel.png"
+      "image": "cafe-saintclair-mel.webp"
     },
 
     {
       "id":"6",
       "name": "Saint’ Clair - Tradicional" ,
-      "image": "cafe-saintclair-tradicional.png"
+      "image": "cafe-saintclair-tradicional.webp"
     },
     {
       "id":"7",
       "name": "Constantino - Clássico",
-      "image": "cafe-constantino-500g.png"
+      "image": "cafe-constantino-500g.webp"
     },
     {
       "id":"8",
       "name": "Forquilha do Rio - Caparaó Amarelo",
-      "image": "cafe-forquilha-do-rio-amarelo.png"
+      "image": "cafe-forquilha-do-rio-amarelo.webp"
     },
     {
       "id":"9",
       "name": "Recanto dos Tucanos - Microlote Sol Poente",
-      "image": "cafe-recanto-dos-tucanos-sol-poente.png"
+      "image": "cafe-recanto-dos-tucanos-sol-poente.webp"
     },
     {
       "id":"10",
       "name": "Recanto dos Tucanos - Tradicional",
-      "image": "cafe-recanto-dos-tucanos-trad.png"
+      "image": "cafe-recanto-dos-tucanos-trad.webp"
     },
     {
       "id":"11",
       "name": "Recanto dos Tucanos - Microlote Jatai",
-      "image": "cafe-recanto-dos-tucanos-jatai.png"
+      "image": "cafe-recanto-dos-tucanos-jatai.webp"
     },
     {
       "id":"12",
       "name": "Sítio Café das Montanhas - Catuai 62 Amarelo",
-      "image": "cafe-das-montanhas-amarelo.png"
+      "image": "cafe-das-montanhas-amarelo.webp"
     },
     {
       "id":"13",
       "name": "Sítio Café das Montanhas - Microlote Fermentação Natural",
-      "image": "cafe-das-montanhas-natural.png"
+      "image": "cafe-das-montanhas-natural.webp"
     },
     {
       "id":"14",
       "name": "Sítio Café das Montanhas - Catuai 44 Vermelho",
-      "image": "cafe-das-montanhas-vermelho.png"
+      "image": "cafe-das-montanhas-vermelho.webp"
     },
     {
       "id":"15",
       "name": "Bazilli - Torrefação Artesanal",
-      "image": "cafe-bazzili.png"
+      "image": "cafe-bazzili.webp"
     }
   ]
 }

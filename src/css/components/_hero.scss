@@ -1,6 +1,5 @@
 .hero {
   align-items: center;
-  background-image: url("../assets/hero-background.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -15,6 +14,15 @@
 
   @media screen and (min-width: 800px) {
     background-attachment: fixed;
+  }
+
+  &__no-webp {
+    background-image: url("../assets/hero-background.png");
+  }
+
+  &__webp {
+    background-image: url("../assets/hero-background.webp");
+
   }
   
   &__logo {

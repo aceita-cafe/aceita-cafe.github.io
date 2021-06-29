@@ -137,7 +137,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.showcaseList = void 0;
 
 var showcaseList = function showcaseList(showcase) {
-  return "\n  <li class=\"list__item\">\n    <img class=\"showcase__images\" src=\"".concat(showcase.image, "\" alt=\"Coffee\" />\n    <div class=\"showcase__container\">\n      <h5 class=\"showcase__name\">").concat(showcase.name, "</h5>\n      <button class=\"button button--stroke button--details\" onclick=\"openModal(").concat(showcase.id, ")\">Detalhes</button>\n      <a class=\"button button--whatsapp\" href=\"https://wa.me/556699511499\" target=\"_blank\">Comprar</a>\n    </div>\n  </li>\n  ");
+  return "\n  <li class=\"list__item\">\n    <picture>\n      <source srcset=\"".concat(showcase.webp, "\" type=\"image/webp\">\n      <source srcset=\"").concat(showcase.png, "\" type=\"image/png\">\n      <img class=\"showcase__images\" src=\"").concat(showcase.png, "\" alt=\"Coffee\" />\n    </picture>\n    <div class=\"showcase__container\">\n      <h5 class=\"showcase__name\">").concat(showcase.name, "</h5>\n      <button class=\"button button--stroke button--details\" onclick=\"openModal(").concat(showcase.id, ")\">Detalhes</button>\n      <a class=\"button button--whatsapp\" href=\"https://wa.me/556699511499\" target=\"_blank\">Comprar</a>\n    </div>\n  </li>\n  ");
 };
 
 exports.showcaseList = showcaseList;
@@ -146,27 +146,33 @@ module.exports = {
   "showcase": [{
     "id": "1",
     "name": "Cordilheiras do Caparaó - Chocolate",
-    "image": "cafe-caparao-junino.webp"
+    "webp": "cafe-caparao-chocolate.webp",
+    "png": "cafe-caparao-chocolate.png"
   }, {
     "id": "2",
     "name": "Cordilheiras do Caparaó - Café Junino",
-    "image": "cafe-caparao-junino.webp"
+    "webp": "cafe-caparao-junino.webp",
+    "png": "cafe-caparao-junino.png"
   }, {
     "id": "3",
     "name": "Cordilheiras do Caparaó - Café da Rosa",
-    "image": "cafe-caparao-rosa.webp"
+    "webp": "cafe-caparao-rosa.webp",
+    "png": "cafe-caparao-rosa.png"
   }, {
     "id": "4",
     "name": "Douro Microlote Campeão do Coffee of The Year 2020",
-    "image": "cafe-saintclair-douro.webp"
+    "webp": "cafe-saintclair-douro.webp",
+    "png": "cafe-saintclair-douro.png"
   }, {
     "id": "5",
     "name": "Saint’ Clair - Mel Cítrico",
-    "image": "cafe-saintclair-mel.webp"
+    "webp": "cafe-saintclair-mel.webp",
+    "png": "cafe-saintclair-mel.png"
   }, {
     "id": "6",
     "name": "Saint’ Clair - Tradicional",
-    "image": "cafe-saintclair-tradicional.webp"
+    "webp": "cafe-saintclair-tradicional.webp",
+    "png": "cafe-saintclair-tradicional.png"
   }]
 };
 },{}],"data/modal.json":[function(require,module,exports) {
@@ -397,6 +403,15 @@ _showcase2.showcase.forEach(function (item) {
   showcaseContainer.innerHTML = showcaseContainer.innerHTML + showcaseItems;
 });
 
+Modernizr.on('webp', function (result) {
+  if (result) {
+    document.querySelector('.hero').classList.toggle('hero__webp');
+    document.querySelector('.plan').classList.toggle('plan__webp');
+  } else {
+    document.querySelector('.hero').classList.toggle('hero__no-webp');
+    document.querySelector('.plan').classList.toggle('plan__no-webp');
+  }
+});
 window.openModal = _modal.openModal;
 },{"./js/header":"js/header.js","./js/showcase.js":"js/showcase.js","./data/showcase.json":"data/showcase.json","./js/modal.js":"js/modal.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -426,7 +441,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39221" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42831" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

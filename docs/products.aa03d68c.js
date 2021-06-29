@@ -122,63 +122,78 @@ module.exports = {
   "products": [{
     "id": "1",
     "name": "Cordilheiras do Caparaó - Chocolate",
-    "image": "cafe-caparao-chocolate.webp"
+    "webp": "cafe-caparao-chocolate.webp",
+    "png": "cafe-caparao-chocolate.png"
   }, {
     "id": "2",
     "name": "Cordilheiras do Caparaó - Café Junino",
-    "image": "cafe-caparao-junino.webp"
+    "webp": "cafe-caparao-junino.webp",
+    "png": "cafe-caparao-junino.png"
   }, {
     "id": "3",
     "name": "Cordilheiras do Caparaó - Café da Rosa",
-    "image": "cafe-caparao-rosa.webp"
+    "webp": "cafe-caparao-rosa.webp",
+    "png": "cafe-caparao-rosa.png"
   }, {
     "id": "4",
     "name": "Douro Microlote Campeão do Coffee of The Year 2020",
-    "image": "cafe-saintclair-douro.webp"
+    "webp": "cafe-saintclair-douro.webp",
+    "png": "cafe-saintclair-douro.png"
   }, {
     "id": "5",
     "name": "Saint’ Clair - Mel Cítrico",
-    "image": "cafe-saintclair-mel.webp"
+    "webp": "cafe-saintclair-mel.webp",
+    "png": "cafe-saintclair-mel.png"
   }, {
     "id": "6",
     "name": "Saint’ Clair - Tradicional",
-    "image": "cafe-saintclair-tradicional.webp"
+    "webp": "cafe-saintclair-tradicional.webp",
+    "png": "cafe-saintclair-tradicional.png"
   }, {
     "id": "7",
     "name": "Constantino - Clássico",
-    "image": "cafe-constantino-500g.webp"
+    "webp": "cafe-constantino-500g.webp",
+    "png": "cafe-constantino-500g.png"
   }, {
     "id": "8",
     "name": "Forquilha do Rio - Caparaó Amarelo",
-    "image": "cafe-forquilha-do-rio-amarelo.webp"
+    "webp": "cafe-forquilha-do-rio-amarelo.webp",
+    "png": "cafe-forquilha-do-rio-amarelo.png"
   }, {
     "id": "9",
     "name": "Recanto dos Tucanos - Microlote Sol Poente",
-    "image": "cafe-recanto-dos-tucanos-sol-poente.webp"
+    "webp": "cafe-recanto-dos-tucanos-sol-poente.webp",
+    "png": "cafe-recanto-dos-tucanos-sol-poente.png"
   }, {
     "id": "10",
     "name": "Recanto dos Tucanos - Tradicional",
-    "image": "cafe-recanto-dos-tucanos-trad.webp"
+    "webp": "cafe-recanto-dos-tucanos-trad.webp",
+    "png": "cafe-recanto-dos-tucanos-trad.png"
   }, {
     "id": "11",
     "name": "Recanto dos Tucanos - Microlote Jatai",
-    "image": "cafe-recanto-dos-tucanos-jatai.webp"
+    "webp": "cafe-recanto-dos-tucanos-jatai.webp",
+    "png": "cafe-recanto-dos-tucanos-jatai.png"
   }, {
     "id": "12",
     "name": "Sítio Café das Montanhas - Catuai 62 Amarelo",
-    "image": "cafe-das-montanhas-amarelo.webp"
+    "webp": "cafe-das-montanhas-amarelo.webp",
+    "png": "cafe-das-montanhas-amarelo.png"
   }, {
     "id": "13",
     "name": "Sítio Café das Montanhas - Microlote Fermentação Natural",
-    "image": "cafe-das-montanhas-natural.webp"
+    "webp": "cafe-das-montanhas-natural.webp",
+    "png": "cafe-das-montanhas-natural.png"
   }, {
     "id": "14",
     "name": "Sítio Café das Montanhas - Catuai 44 Vermelho",
-    "image": "cafe-das-montanhas-vermelho.webp"
+    "webp": "cafe-das-montanhas-vermelho.webp",
+    "png": "cafe-das-montanhas-vermelho.png"
   }, {
     "id": "15",
     "name": "Bazilli - Torrefação Artesanal",
-    "image": "cafe-bazzili.webp"
+    "webp": "cafe-bazzili.webp",
+    "png": "cafe-bazzili.png"
   }]
 };
 },{}],"data/modal.json":[function(require,module,exports) {
@@ -402,7 +417,7 @@ var _modal = require("./js/modal.js");
 var _header = require("./js/header");
 
 var productsList = function productsList(products) {
-  return "\n  <li class=\"list__item\">\n    <img class=\"showcase__images\" src=\"".concat(products.image, "\" alt=\"Coffees\" />\n    <div class=\"showcase__container\">\n      <h5 class=\"showcase__name\">").concat(products.name, "</h5>\n      <button class=\"button button--stroke button--details\" onclick=\"openModal(").concat(products.id, ")\">Detalhes</button>\n      <a class=\"button button--whatsapp\" href=\"https://wa.me/556699511499\" target=\"_blank\">Comprar</a>\n    </div>\n  </li>\n  ");
+  return "\n  <li class=\"list__item\">\n    <picture>\n      <source srcset=\"".concat(products.webp, "\" type=\"image/webp\">\n      <source srcset=\"").concat(products.png, "\" type=\"image/png\">\n      <img class=\"showcase__images\" src=\"").concat(products.png, "\" alt=\"Coffee\" />\n    </picture>\n    <div class=\"showcase__container\">\n      <h5 class=\"showcase__name\">").concat(products.name, "</h5>\n      <button class=\"button button--stroke button--details\" onclick=\"openModal(").concat(products.id, ")\">Detalhes</button>\n      <a class=\"button button--whatsapp\" href=\"https://wa.me/556699511499\" target=\"_blank\">Comprar</a>\n    </div>\n  </li>\n  ");
 };
 
 var productsContainer = document.querySelector(".products__list");
@@ -451,7 +466,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39221" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42831" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

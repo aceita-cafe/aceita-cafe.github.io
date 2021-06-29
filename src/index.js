@@ -21,4 +21,15 @@ showcase.forEach((item) => {
   showcaseContainer.innerHTML = showcaseContainer.innerHTML + showcaseItems
 })
 
+Modernizr.on('webp', function(result) {
+  if (result) {
+    document.querySelector('.hero').classList.toggle('hero__webp')
+    document.querySelector('.plan').classList.toggle('plan__webp')
+
+  } else {
+    document.querySelector('.hero').classList.toggle('hero__no-webp')
+    document.querySelector('.plan').classList.toggle('plan__no-webp')
+  }
+});
+
 window.openModal = openModal;

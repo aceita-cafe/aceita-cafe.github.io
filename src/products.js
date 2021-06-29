@@ -5,7 +5,11 @@ import { headerDropdown } from "./js/header";
 const productsList = (products) => {
   return `
   <li class="list__item">
-    <img class="showcase__images" src="${products.image}" alt="Coffees" />
+    <picture>
+      <source srcset="${products.webp}" type="image/webp">
+      <source srcset="${products.png}" type="image/png">
+      <img class="showcase__images" src="${products.png}" alt="Coffee" />
+    </picture>
     <div class="showcase__container">
       <h5 class="showcase__name">${products.name}</h5>
       <button class="button button--stroke button--details" onclick="openModal(${products.id})">Detalhes</button>

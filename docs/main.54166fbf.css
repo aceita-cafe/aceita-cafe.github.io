@@ -309,7 +309,6 @@ li {
 
 .hero {
   align-items: center;
-  background-image: url("/hero-background.7fcb3d55.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -326,6 +325,12 @@ li {
   .hero {
     background-attachment: fixed;
   }
+}
+.hero__no-webp {
+  background-image: url("/hero-background.03ea884f.png");
+}
+.hero__webp {
+  background-image: url("/hero-background.7fcb3d55.webp");
 }
 .hero__logo {
   display: flex;
@@ -706,7 +711,6 @@ li {
 
 .plan {
   align-items: center;
-  background-image: url("/plan-background.7c30955e.webp");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -719,6 +723,12 @@ li {
   .plan {
     background-attachment: fixed;
   }
+}
+.plan__webp {
+  background-image: url("/plan-background.7c30955e.webp");
+}
+.plan__no-webp {
+  background-image: url("/plan-background.d4ef8b5e.png");
 }
 .plan__container {
   background-color: #F2F2F2;

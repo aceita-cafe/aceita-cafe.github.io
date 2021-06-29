@@ -1,6 +1,5 @@
 .plan {
   align-items: center;
-  background-image: url("../assets/plan-background.webp");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -11,6 +10,14 @@
 
   @media screen and (min-width: 800px) {
     background-attachment: fixed;
+  }
+
+  &__webp {
+    background-image: url("../assets/plan-background.webp");
+  }
+
+  &__no-webp {
+    background-image: url("../assets/plan-background.png");
   }
 
   &__container {

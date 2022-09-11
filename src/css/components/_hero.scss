@@ -24,7 +24,7 @@
     background-image: url("../assets/hero-background.webp");
 
   }
-  
+
   &__logo {
     display: flex;
 
@@ -43,14 +43,14 @@
 
   &__resume {
     align-items: center;
-    background-color: $orange;
+    background-color: $white;
     display: flex;
     flex-direction: column;
     position: relative;
     text-align: center;
     z-index: 1;
-    
-    
+
+
     @media screen and (min-width: 751px) {
       border-radius: 25px;
       min-height: 400px;
@@ -75,7 +75,7 @@
   }
 
   &__title {
-    color: $white;
+    color: $brown;
 
     @media screen and (min-width: 701px) {
       font-size: 42px;
@@ -109,8 +109,8 @@
   &__text {
     display: flex;
     position: relative;
-    color: $white;
-    font-size: 16px;
+    color: $brown;
+    font-size: 18px;
     line-height: 21.2px;
     text-align: center;
 
